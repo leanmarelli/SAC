@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="contenedor home-container">
+        <div class="menu-izquierdo">
+            <div class="area"></div>
+            <nav class="main-menu">
+                <div class="logoMenuDesplegable">
+                    <img src="../img/logoTernium.png" alt="logo">
+                </div>
+                <ul>
+                    <li class="has-subnav">
+                        <a href="#">
+                            <i class="fa fa-file fa-2x"></i>
+                            <span class="nav-text">
+                                Gestión de riesgos
+                            </span>
+                        </a>
+                    </li>
+                    <li class="has-subnav">
+                        <a href="#">
+                            <i class="fa fa-layer-group fa-2x"></i>
+                            <span class="nav-text">
+                                Acciones
+                            </span>
+                        </a>
+
+                    </li>
+                    <li class="has-subnav">
+                        <a href="#">
+                            <i class="fa fa-desktop fa-2x"></i>
+                            <span class="nav-text">
+                                Gestión
+                            </span>
+                        </a>
+                    </li>
+                    <li class="has-subnav">
+                        <a href="#">
+                            <i class="fa fa-chart-line fa-2x"></i>
+                            <span class="nav-text">
+                                Gestión de riesgos
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contenido-principal">
+            <header>
+                <nav class="headerSacHome">
+                    <div class="pos-f-t">
+                        <nav class="navbar navbar-dark">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </nav>
+                    </div>
+                    <div> <a href="home.html" class="titleHeader">SAC</a></div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item" aria-current="page"> <a href="main.html">
+                                    < Inicio</a>
+                            </li>
+                            <li class="breadcrumb-item"><a href="home.html">Solicitudes</a></li>
+                        </ol>
+                    </nav>
+                </nav>
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-dark-hamburger px-4">
+                        <ul class="hamburger-navbar-content m-0">
+                            <li class="has-subnav">
+                                <a href="#">
+                                    <i class="fa fa-file fa-2x"></i>
+                                    <span class="nav-text">
+                                        Gestión de riesgos
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="has-subnav">
+                                <a href="#">
+                                    <i class="fa fa-layer-group fa-2x"></i>
+                                    <span class="nav-text">
+                                        Acciones
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li class="has-subnav">
+                                <a href="#">
+                                    <i class="fa fa-desktop fa-2x"></i>
+                                    <span class="nav-text">
+                                        Gestión
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="has-subnav">
+                                <a href="#">
+                                    <i class="fa fa-chart-line fa-2x"></i>
+                                    <span class="nav-text">
+                                        Gestión de riesgos
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <div class="FiltrosDeSolicitudes">
+                <!-- BOTON NARANJA DE LA IZQUIERDA FILTROS-->
+                <!-- Modal de filtros abajo de todo  -->
+                <div class="d-flex justify-content-start align-self-start">
+                    <a data-toggle="modal" data-target="#leftModal">
+                        <i class="fas fa-columns" style="color: #FF9900;font-size: 25px;"></i>
+                    </a>
+                </div>
+
+                <!-- CONTENIDO PRINCIPAL FILTROS -->
+                <div class="contenido-principal-filtros">
+                    <!-- FILTROS APLICADOS -->
+                    <div class="filtros-aplicados">
+                        <p class="btn m-0 p-0">Filtros aplicados:</p>
+                        <button class="btn btn-sm btn-filtros-aplicados"
+                            style="border: 1px solid #c4c4c4; border-radius: 20px;font-size: 0.75rem;">AR
+                            &nbsp;
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <button class="btn btn-sm btn-filtros-aplicados"
+                            style="border: 1px solid #c4c4c4; border-radius: 20px;font-size: 0.75rem;">SAN
+                            NICOLÁS
+                            &nbsp; <i class="fas fa-times"></i>
+                        </button>
+                        <button class="btn btn-sm btn-filtros-aplicados"
+                            style="border: 1px solid #c4c4c4; border-radius: 20px;font-size: 0.75rem;">ENSENADA
+                            &nbsp; <i class="fas fa-times"></i>
+                        </button>
+                        <button class="btn btn-sm btn-filtros-aplicados"
+                            style="border: 1px solid #c4c4c4; border-radius: 20px;font-size: 0.75rem;">COLADA
+                            CONTINUA &nbsp; <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <!-- SELECTS - INPUT (DATE) - OTROS BOTONES NARANJAS -->
+                    <div class="filtros-fecha-botones">
+                        <!-- Rango desde -->
+                        <div class="rangosFiltros mr-2">
+                            <label class="m-0">Rango desde</label>
+                            <input class="filtros-date" type="date">
+                        </div>
+                        <!-- Rango hasta -->
+                        <div class="rangosFiltros mr-2">
+                            <label class="m-0">Rango hasta</label>
+                            <input class="filtros-date" type="date">
+                        </div>
+                        <!-- Estado -->
+                        <div class="estadoRiesgoFiltros mr-2">
+                            <label class="m-0">Estado</label>
+                            <div class="dropdown">
+                                <a class="btn btn-light dropdown-toggle dropdown-toggle-home input-estado px-2" href="#"
+                                    role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    -Seleccionar estado-
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Modificación</a>
+                                    <a class="dropdown-item" href="#">Eliminación</a>
+                                    <a class="dropdown-item" href="#">Agregado</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Riesgo -->
+                        <div class="estadoRiesgoFiltros mr-2">
+                            <label class="m-0">Riesgo</label>
+                            <div class="dropdown">
+                                <a class="btn btn-light dropdown-toggle dropdown-toggle-home input-estado px-2" href="#"
+                                    role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    -Seleccionar riesgo-
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Modificación</a>
+                                    <a class="dropdown-item" href="#">Eliminación</a>
+                                    <a class="dropdown-item" href="#">Agregado</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-filtros" style="display: flex; align-items: flex-end; padding: .2rem;">
+                            <button class="btn-sm mr-2">
+                                UT
+                            </button>
+                            <button class="btn-sm mr-2" style="width: max-content;">
+                                CLASE DE EQUIPO
+                            </button>
+                            <button class="btn-sm">
+                                CLASE DE UT
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BOTON DE CONFIGURACION AZUL -->
+                <div class="boton-configuracion">
+                    <button class=" btn-sm btnNuevaSolicitud btnConfiguracion">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="botonesSolicitudesTotales"> 
+                <button class="btn-total btn-total-azul">
+                    <div class="d-flex flex-column align-items-start">
+                        <span>Total en curso</span>
+                    </div>
+                    <div class="f-size-25">
+                        <span class="h3">300</span>
+                    </div>
+                </button>
+                <button class="btn-total btn-total-blanco">
+                    <div class="d-flex flex-column align-items-start">
+                        <span>Total cerradas</span>
+                    </div>
+                    <div>
+                        <span class="h3">50</span>
+                    </div>
+                </button>
+                <button class="btn-total btn-total-blanco">
+                    <div class="d-flex flex-column align-items-start">
+                        <span>Total vencidas</span>
+                    </div>
+                    <div>
+                        <span class="h3">20</span>
+                    </div>
+                </button>
+            </div>
+
+            <div class="ListaDeSolicitudes">
+                <h3>Lista de Solicitudes</h3>
+                <!-- Botones de lista de solicitudes -->
+                <div class="BotonesListaDeSolicitudes">
+                    <div class="BotonesListaDeSolicitudesDerecha">
+                        <div class="btn-group btn-group-sm btn-group-toggle grupoDeBotonesGrises" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked> MIS
+                                SOLICITUDES
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> SOLICITUDES A
+                                APROBAR
+                            </label>
+                        </div>
+                        <button class="btn-sm btnVerTodas ml-3">
+                            VER TODAS
+                        </button>
+                    </div>
+                    <div class="BotonesListaDeSolicitudesDerecha">
+                        <div style="height: 100%;">
+                            <a href="solicitud.html" class="btn-sm btnNuevaSolicitud pr-4 pl-4">
+                                NUEVA SOLICITUD
+                            </a>
+                            <a href="#" class="btn-sm btnNuevaSolicitud mr-1">
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="" style="font-size: 14px; margin: 0;">Buscar Solicitud</label>
+                            </div>
+                            <div class="buscador">
+                                <input type="search" placeholder="Nombre, Estado, UT, Clase de equipo">
+                                <button class="btn-sm"> <i class="fas fa-search" style="color: #999;"></i> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabla de solicitudes -->
+                <div class="tableContainer">
+                    <div
+                        class="table-responsive-lg table-responsive-md table-responsive-lg table-responsive-xxl table-responsive">
+                        <table class="table-sm table-striped" style="width: 100%; border-spacing: 5rem;">
+                            <thead>
+                                <tr style="border-bottom: 2px solid #f90; border-top: 1px solid #666;">
+                                    <td class="pt-2 pb-2" scope="col"></td>
+                                    <td style="padding: 10px 15px 10px 5px;">
+                                        <div style="display: flex; flex-direction: row;justify-content: space-between;">
+                                            <div>
+                                                Número de solicitud
+                                            </div>
+                                            <div class="m-auto">
+                                                <i class="fas fa- "></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="padding: 10px 15px 10px 5px; ">
+                                        <div style="display: flex; flex-direction: row;justify-content: space-between;">
+                                            <div>
+                                                Titulo de la solicitud
+                                            </div>
+                                            <div class="m-auto">
+                                                <i class="fas fa-sort"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="padding: 10px 15px 10px 5px; ">
+                                        <div style="display: flex; flex-direction: row;justify-content: space-between;">
+                                            <div>
+                                                Estado
+                                            </div>
+                                            <div class="m-auto">
+                                                <i class="fas fa-sort"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="padding: 10px 15px 10px 5px; ">
+                                        <div style="display: flex; flex-direction: row;justify-content: space-between;">
+                                            <div>
+                                                Nivel de riesgo
+                                            </div>
+                                            <div class="m-auto">
+                                                <i class="fas fa-sort"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="padding: 10px 15px 10px 5px; ">
+                                        <div style="display: flex; flex-direction: row;justify-content: space-between;">
+                                            <div>
+                                                Última modificación
+                                            </div>
+                                            <div class="m-auto">
+                                                <i class="fas fa-sort"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="padding: 10px 15px 10px 5px; ">
+                                        <div style="display: flex; flex-direction: row;justify-content: space-between;">
+                                            <div>
+                                                Vencimiento
+                                            </div>
+                                            <div class="m-auto">
+                                                <i class="fas fa-sort"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="padding: 10px 15px 10px 5px; ">
+                                        <div style="display: flex; flex-direction: row;justify-content: space-between;">
+                                            <div>
+                                                Ubicación técnica
+                                            </div>
+                                            <div class="ml-4 m-auto">
+                                                <i class="fas fa-sort"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="padding: 10px 15px 10px 15px; border-left: 1px solid #c4c4c4;">
+                                        <div style="text-align: center;">
+                                            <div>
+                                                Acciones
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="border-left-x" scope="row" class="btn-sm btn-muy-alta" type="button"
+                                        data-toggle="modal" data-target="#detalleMuyAlta"><input
+                                            style="margin: .6rem 0 0 1.5rem;" type="checkbox">
+                                    </th>
+                                    <td scope="row">AR000154</td>
+                                    <td>Modificación longitud palanca freno PG832</td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="enEdicion mr-2"></div>
+                                            <p style="opacity: 100%; margin: 0;">EN EDICIÓN</p>
+                                        </div>
+                                    </td>
+                                    <td>ALTO</td>
+                                    <td>03/05/2021</td>
+                                    <td>21/02/2021</td>
+                                    <td>Divers</td>
+                                    <td style="border-left: 1px solid #c4c4c4; text-align: center;"><i
+                                            class="fas fa-download fa-download-tb" title="Descargar"></i><i
+                                            class="far fa-eye" title="Ver"></i><i class="fas fa-file-import"
+                                            title="Importar"></i></td>
+                                </tr>
+                                <tr>
+                                    <th class="border-left-o" scope="row" class="btn-sm btn-muy-alta" type="button"
+                                        data-toggle="modal" data-target="#detalleMuyAlta"><input
+                                            style="margin: .6rem 0 0 1.5rem;" type="checkbox">
+                                    </th>
+                                    <td scope="row">AR000154</td>
+                                    <td>Modificación longitud palanca freno PG832</td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="sinAprobar mr-2"></div>
+                                            <p style="opacity: 100%; margin: 0;">SIN APROBAR</p>
+                                        </div>
+                                    </td>
+                                    <td>ALTO</td>
+                                    <td>03/05/2021</td>
+                                    <td>21/02/2021</td>
+                                    <td>Divers</td>
+                                    <td style="border-left: 1px solid #c4c4c4; text-align: center"><i
+                                            class="fas fa-download fa-download-tb" title="Descargar"></i><i
+                                            class="far fa-eye" title="Ver"></i><i class="fas fa-file-import"
+                                            title="Importar"></i></td>
+                                </tr>
+                                <tr>
+                                    <th class="border-left-x" scope="row" class="btn-sm btn-muy-alta" type="button"
+                                        data-toggle="modal" data-target="#detalleMuyAlta"><input
+                                            style="margin: .6rem 0 0 1.5rem;" type="checkbox">
+                                    </th>
+                                    <td scope="row">AR000154</td>
+                                    <td>Modificación longitud palanca freno PG832</td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="atrasado mr-2"></div>
+                                            <p style="opacity: 100%; margin: 0;">ATRASADO</p>
+                                        </div>
+                                    </td>
+                                    <td>ALTO</td>
+                                    <td>03/05/2021</td>
+                                    <td>21/02/2021</td>
+                                    <td>Divers</td>
+                                    <td style="border-left: 1px solid #c4c4c4; text-align: center"><i
+                                            class="fas fa-download fa-download-tb" title="Descargar"></i><i
+                                            class="far fa-eye" title="Ver"></i><i class="fas fa-file-import"
+                                            title="Importar"></i></td>
+                                </tr>
+                                <tr>
+                                    <th class="border-left-o" scope="row" class="btn-sm btn-muy-alta" type="button"
+                                        data-toggle="modal" data-target="#detalleMuyAlta"><input
+                                            style="margin: .6rem 0 0 1.5rem;" type="checkbox">
+                                    </th>
+                                    <td scope="row">AR000154</td>
+                                    <td>Modificación longitud palanca freno PG832</td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="aprobado mr-2"></div>
+                                            <p style="opacity: 100%; margin: 0;">APROBADO</p>
+                                        </div>
+                                    </td>
+                                    <td>ALTO</td>
+                                    <td>03/05/2021</td>
+                                    <td>21/02/2021</td>
+                                    <td>Divers</td>
+                                    <td style="border-left: 1px solid #c4c4c4; text-align: center"><i
+                                            class="fas fa-download fa-download-tb" title="Descargar"></i><i
+                                            class="far fa-eye" title="Ver"></i><i class="fas fa-file-import"
+                                            title="Importar"></i></td>
+                                </tr>
+                                <tr>
+                                    <th class="border-left-x" scope="row" class="btn-sm btn-muy-alta" type="button"
+                                        data-toggle="modal" data-target="#detalleMuyAlta"><input
+                                            style="margin: .6rem 0 0 1.5rem;" type="checkbox">
+                                    </th>
+                                    <td scope="row">AR000154</td>
+                                    <td>Modificación longitud palanca freno PG832</td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="rechazado mr-2"></div>
+                                            <p style="opacity: 100%; margin: 0;">RECHAZADO</p>
+                                        </div>
+                                    </td>
+                                    <td>ALTO</td>
+                                    <td>03/05/2021</td>
+                                    <td>21/02/2021</td>
+                                    <td>Divers</td>
+                                    <td style="border-left: 1px solid #c4c4c4; text-align: center; width: 10%;"><i
+                                            class="fas fa-download fa-download-tb" title="Descargar"></i><i
+                                            class="far fa-eye" title="Ver"></i><i class="fas fa-file-import"
+                                            title="Importar"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <!-- Paginador del listado de solicitudes -->
+                <div class="paginador mt-4 d-flex justify-content-end">
+                    <p style="font-size: 13px; margin-top: 8px; margin-right: 1rem;">300 Resultados</p>
+                    <p style="font-size: 13px; margin-top: 8px;">Anterior</p>
+                    <select name="previous" id="">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <nav aria-label="Page navigation listado de alertas">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item">
+                                <a class="page-link" href="#"><i class="fas fa-angle-left"></i></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#"><i class="fas fa-angle-right"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p style="font-size: 13px; margin-top: 8px;">Nro. por página</p>
+                    <select name="next" id="">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- POPUPS Y MODALS -->
+
+    <!-- Modal de filtros naranja-->
+    <div class="modal fade modal-left" id="leftModal" tabindex="-1" aria-labelledby="leftModal" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-style" role="document">
+            <div class="modal-content" style="color: #666;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLeft">FILTROS</h5>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button class="aplicarFiltro">APLICAR FILTRO</button>
+                </div>
+                <h6 class="m-3">UBICACIÓN TÉCNICA</h6>
+                <div class="accordion" id="filtros">
+                    <div>
+                        <!-- PAISES -->
+                        <div class="items-filtros" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                                    data-target="#paises" aria-expanded="true" aria-controls="paises"
+                                    style="color: #666;">
+                                    <i class="fas fa-chevron-right rotate"></i><input style="margin: 0 5px;"
+                                        type="checkbox"> DIRECCIÓN
+                                </button>
+                            </h2>
+                            <div id="paises" class="accordion-collapse collapse ml-5" aria-labelledby="flush-headingOne"
+                                data-bs-parent="#paises">
+                                <div class="accordion-body">
+                                    <p><input type="checkbox"> DIRECCIÓN 1 <br></p>
+                                    <p><input type="checkbox"> DIRECCIÓN 2 <br></p>
+                                    <p><input type="checkbox"> DIRECCIÓN 3 <br></p>
+                                    <p><input type="checkbox"> DIRECCIÓN 4 <br></p>
+                                    <p><input type="checkbox"> DIRECCIÓN 5 <br></p>
+                                    <p><input type="checkbox"> DIRECCIÓN 6 <br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PLANTAS -->
+                        <div class="items-filtros" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                                    data-target="#plantas" aria-expanded="true" aria-controls="plantas"
+                                    style="color: #666;">
+                                    <i class="fas fa-chevron-right rotate"></i><input type="checkbox"
+                                        style="margin: 0 5px;">PLANTAS
+                                </button>
+                            </h2>
+                            <div id="plantas" class="accordion-collapse collapse ml-5"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#plantas">
+                                <div class="accordion-body">
+                                    <p><input type="checkbox"> Canning <br></p>
+                                    <p><input type="checkbox"> Ensenada <br></p>
+                                    <p><input type="checkbox"> Florencio Varela <br></p>
+                                    <p><input type="checkbox"> General Savio <br></p>
+                                    <p><input type="checkbox"> Haedo <br></p>
+                                    <p><input type="checkbox"> Rosario <br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- DEPARTAMENTO -->
+                        <div class="items-filtros" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                                    data-target="#procesos" aria-expanded="true" aria-controls="procesos"
+                                    style="color: #666;">
+                                    <i class="fas fa-chevron-right rotate"></i><input type="checkbox"
+                                        style="margin: 0 5px;">DEPARTAMENTO
+                                </button>
+                            </h2>
+                            <div id="procesos" class="accordion-collapse collapse ml-5"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#procesos">
+                                <div class="accordion-body">
+                                    <p><input type="checkbox"> DEPARTAMENTO <br></p>
+                                    <p><input type="checkbox"> DEPARTAMENTO 2 <br></p>
+                                    <p><input type="checkbox"> DEPARTAMENTO 3 <br></p>
+                                    <p><input type="checkbox"> DEPARTAMENTO 4 <br></p>
+                                    <p><input type="checkbox"> DEPARTAMENTO 5 <br></p>
+                                    <p><input type="checkbox"> DEPARTAMENTO 6 <br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- LINEAS -->
+                        <div class="items-filtros" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                                    data-target="#lineas" aria-expanded="true" aria-controls="lineas"
+                                    style="color: #666;">
+                                    <i class="fas fa-chevron-right rotate"></i><input type="checkbox"
+                                        style="margin: 0 5px;">LINEAS
+                                </button>
+                            </h2>
+                            <div id="lineas" class="accordion-collapse collapse ml-5" aria-labelledby="flush-headingOne"
+                                data-bs-parent="#lineas">
+                                <div class="accordion-body">
+                                    <p><input type="checkbox"> Argentina <br></p>
+                                    <p><input type="checkbox"> Brasil <br></p>
+                                    <p><input type="checkbox"> Chile <br></p>
+                                    <p><input type="checkbox"> Colombia <br></p>
+                                    <p><input type="checkbox"> México <br></p>
+                                    <p><input type="checkbox"> Todos <br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

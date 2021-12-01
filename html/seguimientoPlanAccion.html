@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>Aprobacion/Cierre de</title>
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <div>
+            <header>
+                <nav class="headerSac">
+                    <div> <a href="home.html" class="titleHeader">SAC</a></div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item" aria-current="page"> <a href="main.html">
+                                    < Inicio</a>
+                            </li>
+                            <li class="breadcrumb-item"><a href="home.html">Solicitudes</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"
+                                style="color: #666; font-weight: bold; ">
+                                Nueva solicitud</li>
+                        </ol>
+                    </nav>
+                </nav>
+            </header>
+
+
+
+            <!-- Boton de Workflow de solicitud -->
+            <div class="collapseWorkflow">
+                <a data-toggle="collapse" href="#collapseWorkflow" role="button" aria-expanded="false"
+                    aria-controls="collapseWorkflow">
+                    <i class="fas fa-tasks"></i>
+                </a>
+            </div>
+
+            <!-- Contenido principal de Nueva Solicitud -->
+            <!-- Workflow de solicitud -->
+            <div style="display: flex;">
+                <div class="collapse mt-3" id="collapseWorkflow">
+                    <div class="card card-body p-0">
+                        <h6 class="pt-3 pl-3 text-muted">Workflow de solicitud</h6>
+                        <div class="workflow-current p-2">
+                            <input class="mr-2" checked type="radio" name="" id=""> Iniciada <br>
+                            <span class="ml-4">(04/05/2021)</span>
+                        </div>
+                        <!--  <div id="aprobacion" class="p-2 mt-1 mb-1">
+                            <input class="mr-2" type="radio" name="" id=""> Aprobación <br>
+                            <i class="mr-4">(04/05/2021) </i>
+                        </div> -->
+                        <!-- <div id="cerrar-solicitud" class="p-2 display-none">
+                            <input class="mr-2" type="radio" name="" id=""> Cerrar solicitud <br>
+                            (04/05/2021)
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="w-100">
+                    <!-- Formulario SAC -->
+                    <div class="formularioHeader">
+                        <h6 class="mt-4">Formulario SAC Nro: AR000159</h6>
+                        <div class="tituloSolicitud">
+                            <div class="logoSAC flex-wrap">
+                                <img src="../img/Ternium.png" alt="">
+                                <h5>Sistema Administración de Cambio (SAC)</h5>
+                            </div>
+                            <div class="d-flex">
+                                <div style="padding: 1rem;">
+                                    <p>Fecha de inicio de la solicitud</p>
+                                    <p style="color: #818A91;"><b>04/05/2021</b></p>
+                                </div>
+                                <div style="padding: 1rem;">
+                                    <p>Solicitante</p>
+                                    <p style="color: #818A91;"><b>Colandré</b></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grupoDeBotonesGrises mb-4">
+                            <div class="btn-group btn-group-sm grupoDeBotonesGrisesHome" role="group"
+                                aria-label="Basic example">
+                                <a href="solicitud.html" class="btn-secondary py-2 px-3 mr-1 " role="button"
+                                    data-bs-toggle="button" aria-pressed="true">
+                                    SOLICITUD
+                                </a>
+                                <a href="seguimientoPlanAccion.html" class="py-2 px-3 mr-1 btn-secondary active"
+                                    role="button" data-bs-toggle="button" aria-pressed="true">
+                                    <!-- ACLARACION: Este es el boton que tiene la alerta de los campos incompletos invalidos. -->
+                                    SEGUIMIENTO DEL PLAN DE ACCIÓN <span class="badge"><i
+                                            class="fas fa-exclamation-circle text-danger fa-validation"></i></span>
+                                </a>
+                                <a href="aprobacionSolicitud.html" class="py-2 px-3 mr-1 btn-secondary" role="button"
+                                    data-bs-toggle="button" aria-pressed="true">
+                                    APROBACIÓN
+                                </a>
+                                <a href="cerrarSolicitud.html" class="py-2 px-3 mr-1 btn-secondary" role="button"
+                                    data-bs-toggle="button" aria-pressed="true">
+                                    CIERRE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="formularioContainer">
+
+
+                        <div class="alert alert-warning" role="alert">
+                            <i class="fas fa-exclamation-circle"></i>
+                            Todos los campos son obligatorios
+                        </div>
+
+                        <!-- SOLICITUD (APROBACION) -->
+                        <!-- 5- Planes de accion a aprobar-->
+                        <div class="planesDeAccionAAprobar mt-4 mb-5">
+                            <h5>5-Planes de acción a aprobar</h5>
+                            <p>Detallar las acciones a realizar para un cambio seguro</p>
+                            <!-- Mensaje validador -->
+                            <div class="custom-border-left-warning custom-border-left-warning mT-4 w-50">
+                                <div class="row">
+                                    <div class="col-2 col-lg-1 my-2">
+                                        <div class="ml-4">
+                                            <i class="fas fa-exclamation-circle text-danger mr-2"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-lg-10">
+                                        <p class="text-check-warning my-2">Debe haber al menos un plan de acción.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-sm mt-4">
+                                    <thead>
+                                        <tr style="border-bottom: 2px solid #ff9900;">
+                                            <td scope="col">Tipo del plan de acción</td>
+                                            <td>Area Responsable Ejecución</td>
+                                            <td>Responsable Ejecución</td>
+                                            <td>Inicio deseado</td>
+                                            <td>Fin deseado</td>
+                                            <td>Estado</td>
+                                            <td></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Datos invalidos -->
+                                        <tr>
+                                            <td>
+                                                <select name="" id="" class="w-100 text-muted form-control is-invalid">
+                                                    <option value="" selected>Nombre del plan de acción</option>
+                                                    <option value="">Nombre 1</option>
+                                                    <option value="">Nombre 2</option>
+                                                    <option value="">Nombre 3</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select name="tipo-de-cambio" id=""
+                                                    class="w-100 text-muted form-control is-invalid">
+                                                    <option value="">- Seleccione área -</option>
+                                                    <option value="">Ingeniería</option>
+                                                    <option value="">Procesos</option>
+                                                    <option value="">Ing Mantenimiento-Técnologico</option>
+                                                    <option value="">HISE</option>
+                                                    <option value="">Calidad</option>
+                                                    <option value="">Medio Ambiente</option>
+                                                    <option value="">Ing. Seguridad</option>
+                                                    <option value="">Otro</option>
+                                                </select>
+                                            </td>
+                                            <td><input type="text" placeholder="Eduardo García"
+                                                    class="w-100 form-control is-invalid py-2 px-3"></td>
+                                            <td>
+                                                <input type="date" class="w-100 text-muted form-control is-invalid">
+                                            </td>
+                                            <td>
+                                                <input type="date" class="w-100 text-muted form-control is-invalid">
+                                            </td>
+                                            <td>
+                                                <select name="estados" id="" class="w-100 text-muted form-control is-invalid">
+                                                    <option value="">Estados</option>
+                                                    <option value="">Estado 1</option>
+                                                    <option value="">Estado 2</option>
+                                                    <option value="">Estado 3</option>
+                                                    <option value="">Estado 4</option>
+                                                    <option value="">Estado 5</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <button class="add pl-3 opacity-50" disabled><i
+                                                        class="fas fa-plus-square"></i></button>
+                                            </td>
+                                        </tr>
+                                        <!-- Primer comentario a agregar -->
+                                        <tr>
+                                            <td colspan="7">
+                                                <div class="accordion mb-2 row" id="commentsAccordion">
+                                                    <div class="col-9">
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center  px-3">
+                                                            <a class="text-left w-50 mb-2" type="button"
+                                                                data-toggle="collapse" data-target="#collapseTwo"
+                                                                aria-expanded="false" aria-controls="#collapseTwo">
+                                                                <div class="d-flex align-items-center">
+                                                                    <h6 class="m-0">Comentarios</h6>
+                                                                    <button class="add pl-3 opacity-50" disabled><i
+                                                                            class="fas fa-plus-square"></i></button>
+                                                                </div>
+    
+                                                            </a>
+                                                            <i class="fas fa-chevron-down" data-toggle="collapse"
+                                                                data-target="#collapseTwo" aria-expanded="false"
+                                                                aria-controls="#collapseTwo"></i>
+                                                        </div>
+    
+                                                        <div id="collapseTwo" class="collapse show "
+                                                            aria-labelledby="commentsTwo" data-parent="#commentsAccordion">
+                                                            <div class="background-grey">
+                                                                <textarea name="" id="" cols="10" rows="3"></textarea>
+                                                                <button
+                                                                    class="btn btn-sm btn-secundario btn-save-comment">Guardar
+                                                                    comentario</button>
+                                                                <button type="button" class="close close-comment"
+                                                                    aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="border-separador"><hr></div>
+                                            </td>
+                                        </tr>
+                                        <!-- Datos validos -->
+                                        <tr>
+                                            <td>
+                                                <select name="" id="" class="w-100 text-muted">
+                                                    <option value="" selected>Nombre del plan de acción</option>
+                                                    <option value="">Nombre 1</option>
+                                                    <option value="">Nombre 2</option>
+                                                    <option value="">Nombre 3</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select name="tipo-de-cambio" class="w-100 text-muted" id="">
+                                                    <option value="">- Seleccione área -</option>
+                                                    <option value="">Ingeniería</option>
+                                                    <option value="">Procesos</option>
+                                                    <option value="">Ing Mantenimiento-Técnologico</option>
+                                                    <option value="">HISE</option>
+                                                    <option value="">Calidad</option>
+                                                    <option value="">Medio Ambiente</option>
+                                                    <option value="">Ing. Seguridad</option>
+                                                    <option value="">Otro</option>
+                                                </select>
+                                            </td>
+                                            <td><input type="text" placeholder="Eduardo García" class="w-100"></td>
+                                            <td>
+                                                <input type="date" class="w-100 text-muted">
+                                            </td>
+                                            <td>
+                                                <input type="date" class="w-100 text-muted">
+                                            </td>
+                                            <td>
+                                                <select name="estados" id="" class="w-100 text-muted">
+                                                    <option value="">Estados</option>
+                                                    <option value="">Estado 1</option>
+                                                    <option value="">Estado 2</option>
+                                                    <option value="">Estado 3</option>
+                                                    <option value="">Estado 4</option>
+                                                    <option value="">Estado 5</option>
+                                                </select>
+                                            </td>
+                                            <td class="w-maxcontent">
+                                                <button id="subtract"><i class="fas fa-minus-square"></i></button>
+                                                <button class="add px-0"><i class="fas fa-plus-square"></i></button>
+                                                <!-- <button class="edit"><i class="fas fa-pen-square"></i></button> -->
+                                            </td>
+                                        </tr>
+                                        <!-- Comentario a agregar cuando ya hay un comentario agregado -->
+                                        <tr>
+                                            <td colspan="7">
+                                                <div class="accordion row" id="commentsAccordion">
+                                                    <div class="col-9">
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center  background-grey py-3">
+                                                            <a class="text-left" type="button">
+                                                                <div class="d-flex align-items-center">
+                                                                    <h6 class="m-0" data-toggle="collapse"
+                                                                        data-target="#collapseOne" aria-expanded="false"
+                                                                        aria-controls="collapseOne">Comentarios</h6>
+                                                                    <button class="add pl-3" data-toggle="modal"
+                                                                        data-target="#descripcionEjemplo"><i
+                                                                            class="fas fa-history"></i></button>
+                                                                    <button class="add pl-2"><i
+                                                                            class="fas fa-plus-square"></i></button>
+                                                                </div>
+                                                            </a>
+                                                            <div>
+                                                                <i class="fas fa-chevron-down" data-toggle="collapse"
+                                                                    data-target="#collapseOne" aria-expanded="false"
+                                                                    aria-controls="collapseOne"></i>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div id="collapseOne" class="collapse "
+                                                            aria-labelledby="commentsTwo" data-parent="#commentsAccordion">
+                                                            <div class="background-grey">
+                                                                <textarea name="" id="" cols="10" rows="3"></textarea>
+                                                                <button
+                                                                    class="btn btn-sm btn-secundario btn-save-comment">Guardar
+                                                                    comentario</button>
+                                                                <button type="button" class="close close-comment"
+                                                                    aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="d-flex justify-content-center py-3">
+                                                                <p class="col-2 mb-0">08/10/2021 - 12:30</p>
+                                                                <p class="col-8 mb-0">Lorem ipsum dolor sit amet consectetur
+                                                                    adipisicing elit. Debitis iste itaque doloremque sit
+                                                                    quaerat id suscipit maiores qui facere atque! Nisi
+                                                                    laborum aliquid culpa hic iste doloremque laudantium
+                                                                    repellat! Voluptatem illo aspernatur deserunt</p>
+                                                                <p class="col-2">
+                                                                    <button class="add pl-2"><i
+                                                                            class="fas fa-edit"></i></button>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3 custom-border-left-success custom-border-left-success mensaje-exito">
+                                                        <div class="row">
+                                                            <div class="col-12 col-lg-12">
+                                                                <p class="text-check-success mb-0 pt-2 w-maxcontent"> <b>Comentario agregado exitosamente!</b> </p>
+                                                                <p class="text-check-success mb-2 w-maxcontent">Ver comentarios anteriores en el historial. </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="border-separador">
+                                                    <hr>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- Datos validos -->
+                                        <tr>
+                                            <td>
+                                                <select name="" id="" class="w-100 text-muted">
+                                                    <option value="" selected>Nombre del plan de acción</option>
+                                                    <option value="">Nombre 1</option>
+                                                    <option value="">Nombre 2</option>
+                                                    <option value="">Nombre 3</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select name="tipo-de-cambio" class="w-100 text-muted" id="">
+                                                    <option value="">- Seleccione área -</option>
+                                                    <option value="">Ingeniería</option>
+                                                    <option value="">Procesos</option>
+                                                    <option value="">Ing Mantenimiento-Técnologico</option>
+                                                    <option value="">HISE</option>
+                                                    <option value="">Calidad</option>
+                                                    <option value="">Medio Ambiente</option>
+                                                    <option value="">Ing. Seguridad</option>
+                                                    <option value="">Otro</option>
+                                                </select>
+                                            </td>
+                                            <td><input type="text" placeholder="Eduardo García" class="w-100"></td>
+                                            <td>
+                                                <input type="date" class="w-100 text-muted">
+                                            </td>
+                                            <td>
+                                                <input type="date" class="w-100 text-muted">
+                                            </td>
+                                            <td>
+                                                <select name="estados" id="" class="w-100 text-muted">
+                                                    <option value="">Estados</option>
+                                                    <option value="">Estado 1</option>
+                                                    <option value="">Estado 2</option>
+                                                    <option value="">Estado 3</option>
+                                                    <option value="">Estado 4</option>
+                                                    <option value="">Estado 5</option>
+                                                </select>
+                                            </td>
+                                            <td class="w-maxcontent">
+                                                <button id="subtract"><i class="fas fa-minus-square"></i></button>
+                                                <button class="add px-0"><i class="fas fa-plus-square"></i></button>
+                                                <!-- <button class="edit"><i class="fas fa-pen-square"></i></button> -->
+                                            </td>
+                                        </tr>
+                                        <!-- Ver un comentario ya creado anteriormente -->
+                                        <tr>
+                                            <td colspan="7">
+                                                <div class="accordion row" id="commentsAccordion">
+                                                    <div class="col-9">
+                                                        <div class="d-flex justify-content-between align-items-center  background-grey py-3">
+                                                            <a class="text-left" type="button">
+                                                                <div class="d-flex align-items-center">
+                                                                    <h6 class="m-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                                                        aria-controls="collapseThree">Comentarios</h6>
+                                                                    <button class="add pl-3" data-toggle="modal" data-target="#descripcionEjemplo"><i
+                                                                            class="fas fa-history"></i></button>
+                                                                    <button class="add pl-2"><i class="fas fa-plus-square"></i></button>
+                                                                </div>
+                                                            </a>
+                                                            <div>
+                                                                <i class="fas fa-chevron-down" data-toggle="collapse" data-target="#collapseThree"
+                                                                    aria-expanded="false" aria-controls="collapseThree"></i>
+                                                            </div>
+                                                        </div>
+                                        
+                                                        <div id="collapseThree" class="collapse " 
+                                                            aria-labelledby="commentsTwo" data-parent="#commentsAccordion">
+                                                            <div class="d-flex justify-content-center py-3">
+                                                                <p class="col-2 mb-0">08/10/2021 - 12:30</p>
+                                                                <p class="col-8 mb-0">Lorem ipsum dolor sit amet consectetur
+                                                                    adipisicing elit. Debitis iste itaque doloremque sit
+                                                                    quaerat id suscipit maiores qui facere atque! Nisi
+                                                                    laborum aliquid culpa hic iste doloremque laudantium
+                                                                    repellat! Voluptatem illo aspernatur deserunt</p>
+                                                                <p class="col-2">
+                                                                    <button class="add pl-2"><i class="fas fa-edit"></i></button>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- HISTORIAL DE COMENTARIOS/DESCRIPCION -->
+                            <div class="modal fade" id="descripcionEjemplo" tabindex="-1"
+                                aria-labelledby="descripcionEjemploLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="descripcionEjemploLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body modal-body-comment pt-2">
+                                            <div class="d-flex justify-content-center">
+                                                <p class="col-3 mb-0">08/10/2021 - 12:30</p>
+                                                <p class="col-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Debitis iste itaque doloremque sit quaerat
+                                                    id suscipit maiores qui facere atque! Nisi laborum aliquid culpa hic
+                                                    iste doloremque laudantium
+                                                    repellat! Voluptatem illo aspernatur deserunt, quae, dignissimos
+                                                    harum dolorum quisquam doloremque ab quo
+                                                    adipisci explicabo? Neque recusandae quisquam odio culpa!
+                                                    Facilis, veritatis.</p>
+                                            </div>
+                                            <hr>
+                                            <div class="d-flex justify-content-center">
+                                                <p class="col-3 mb-0">08/10/2021 - 12:30</p>
+                                                <p class="col-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Debitis iste itaque doloremque sit quaerat
+                                                    id suscipit maiores qui facere atque! Nisi laborum aliquid culpa hic
+                                                    iste doloremque laudantium
+                                                    repellat! Voluptatem illo aspernatur deserunt, quae, dignissimos
+                                                    harum dolorum quisquam doloremque ab quo
+                                                    adipisci explicabo? Neque recusandae quisquam odio culpa!
+                                                    Facilis, veritatis.</p>
+                                            </div>
+                                            <hr>
+                                            <div class="d-flex justify-content-center">
+                                                <p class="col-3 mb-0">08/10/2021 - 12:30</p>
+                                                <p class="col-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Debitis iste itaque doloremque sit quaerat
+                                                    id suscipit maiores qui facere atque! Nisi laborum aliquid culpa hic
+                                                    iste doloremque laudantium
+                                                    repellat! Voluptatem illo aspernatur deserunt, quae, dignissimos
+                                                    harum dolorum quisquam doloremque ab quo
+                                                    adipisci explicabo? Neque recusandae quisquam odio culpa!
+                                                    Facilis, veritatis.</p>
+                                            </div>
+                                            <hr>
+                                            <div class="d-flex justify-content-center">
+                                                <p class="col-3 mb-0">08/10/2021 - 12:30</p>
+                                                <p class="col-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Debitis iste itaque doloremque sit quaerat
+                                                    id suscipit maiores qui facere atque! Nisi laborum aliquid culpa hic
+                                                    iste doloremque laudantium
+                                                    repellat! Voluptatem illo aspernatur deserunt, quae, dignissimos
+                                                    harum dolorum quisquam doloremque ab quo
+                                                    adipisci explicabo? Neque recusandae quisquam odio culpa!
+                                                    Facilis, veritatis.</p>
+                                            </div>
+                                            <hr>
+                                            <div class="d-flex justify-content-center">
+                                                <p class="col-3 mb-0">08/10/2021 - 12:30</p>
+                                                <p class="col-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Debitis iste itaque doloremque sit quaerat
+                                                    id suscipit maiores qui facere atque! Nisi laborum aliquid culpa hic
+                                                    iste doloremque laudantium
+                                                    repellat! Voluptatem illo aspernatur deserunt, quae, dignissimos
+                                                    harum dolorum quisquam doloremque ab quo
+                                                    adipisci explicabo? Neque recusandae quisquam odio culpa!
+                                                    Facilis, veritatis.</p>
+                                            </div>
+                                            <hr>
+                                            <div class="d-flex justify-content-center">
+                                                <p class="col-3 mb-0">08/10/2021 - 12:30</p>
+                                                <p class="col-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Debitis iste itaque doloremque sit quaerat
+                                                    id suscipit maiores qui facere atque! Nisi laborum aliquid culpa hic
+                                                    iste doloremque laudantium
+                                                    repellat! Voluptatem illo aspernatur deserunt, quae, dignissimos
+                                                    harum dolorum quisquam doloremque ab quo
+                                                    adipisci explicabo? Neque recusandae quisquam odio culpa!
+                                                    Facilis, veritatis.</p>
+                                            </div>
+                                            <hr>
+                                            <div class="d-flex justify-content-center">
+                                                <p class="col-3 mb-0">08/10/2021 - 12:30</p>
+                                                <p class="col-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Debitis iste itaque doloremque sit quaerat
+                                                    id suscipit maiores qui facere atque! Nisi laborum aliquid culpa hic
+                                                    iste doloremque laudantium
+                                                    repellat! Voluptatem illo aspernatur deserunt, quae, dignissimos
+                                                    harum dolorum quisquam doloremque ab quo
+                                                    adipisci explicabo? Neque recusandae quisquam odio culpa!
+                                                    Facilis, veritatis.</p>
+                                            </div>
+                                            <hr>
+                                            <div class="d-flex justify-content-center">
+                                                <p class="col-3 mb-0">08/10/2021 - 12:30</p>
+                                                <p class="col-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Debitis iste itaque doloremque sit quaerat
+                                                    id suscipit maiores qui facere atque! Nisi laborum aliquid culpa hic
+                                                    iste doloremque laudantium
+                                                    repellat! Voluptatem illo aspernatur deserunt, quae, dignissimos
+                                                    harum dolorum quisquam doloremque ab quo
+                                                    adipisci explicabo? Neque recusandae quisquam odio culpa!
+                                                    Facilis, veritatis.</p>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FIN DE MODAL DE HISTORIAL DE COMENTARIOS/DESCRIPCION -->
+
+                            <br>
+                            <p><b>Presupuesto budgetario e imputación</b> (opcionales)</p>
+                            <label for="costo-estimado">Costo estimado</label> <br>
+                            <input type="text" name="costo-estimado" placeholder="Escriba el costo estimado"
+                                style="width: 20rem;"> <br>
+                            <label for="centro-de-costo" class="mt-2">Centro de costo</label> <br>
+                            <input type="text" name="centro-de-costo" placeholder="Escriba el centro de costo"
+                                class=" mb-2" style="width: 20rem;"> <br>
+                            <label for="elemento-pep">Elemento PEP</label> <br>
+                            <input type="text" name="elemento-pep" placeholder="Escriba el elemento PEP"
+                                style="width: 20rem;"> <br>
+                            <p class="mt-3">Adjuntar presupuesto (Opcional)</p>
+                            <button class="btn btnAdjuntarArchivos mb-3">
+                                <p><i class="fas fa-upload mr-2"></i>Adjuntar archivos</p>
+                            </button>
+                            <!-- ARCHIVO ADJUNTO -->
+                            <div class="archivo-adjunto">
+                                <p class="mb-0"> Archivo 1.pdf... </p>
+                                <i class="fas fa-times borrar-adjunto"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- FIN DE CREACION DEL FORM NUEVA SOLICITUD -->
+
+        <!------ POPUP'S ------>
+        <!-- Cancelar nueva solicitud -->
+        <div class="modal fade" id="cancelar-nueva-solicitud" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="cancelar-nueva-solicitud-Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div style="display: flex; justify-content: center;">
+                            <i class="fas fa-exclamation"
+                                style="border: 3px solid #f90; color: #f90; border-radius: 500rem; font-size: 3rem; width: 80px; height: 80px; text-align: center; padding-top: 0.75rem;"></i>
+                        </div>
+                        <h4 style="text-align: center; font-weight: 400; color: #666; margin: 15px;">
+                            Cancelar nueva solicitud</h4>
+                        <p style="text-align: center;">Si cancelas en este momento perderás los cambios no
+                            guardados.</b></p>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">VOLVER A LA
+                            SOLICITUD</button>
+                        <button type="button" class="btn"
+                            style="background-color: #01688a; color: white;">CONTINUAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Rechazar aprobación de nueva solicitud -->
+        <div class="modal fade" id="rechazar-nueva-solicitud" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="rechazar-nueva-solicitud-Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div style="display: flex; justify-content: center;">
+                            <i class="far fa-times"
+                                style="color: #f20; font-size: 3rem; width: 80px; height: 80px; text-align: center; padding-top: 0.75rem;"></i>
+                        </div>
+                        <h4 style="text-align: center; font-weight: 400; color: #666; margin: 15px;">
+                            Rechazar solicitud</h4>
+                        <p style="text-align: center;">Se enviará una notificación por mail al solicitante.</b></p>
+                        <label for="">Motivo del rechazo</label>
+                        <textarea name="" id="" cols="10" rows="5"
+                            placeholder="Escriba aquí el motivo del rechazo"></textarea>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">VOLVER A LA
+                            SOLICITUD</button>
+                        <button type="button" class="btn" style="background-color: #01688a; color: white;"
+                            data-toggle="modal" data-target="#solicitud-rechazada"
+                            data-dismiss="modal">CONTINUAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- GUARDAR SOLICITUD -->
+        <div class="modal fade" id="guardar-solicitud" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="guardar-solicitud-solicitud-Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div style="display: flex; justify-content: center;">
+                            <i class="far fa-check-circle"
+                                style="color: #2aa330; font-size: 5rem; width: 80px; height: 80px; text-align: center; padding-top: 0.75rem;"></i>
+                        </div>
+                        <h4 style="text-align: center; font-weight: 400; color: #666; margin: 15px;">
+                            Guardar solicitud</h4>
+                        <p style="text-align: center;">Se guardaran todos los datos completados hasta este
+                            momento.</b>
+                        </p>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">VOLVER A LA
+                            SOLICITUD</button>
+
+                        <button type="button" class="btn" style="background-color: #01688a; color: white;"
+                            data-toggle="modal" data-target="#solicitud-guardada"
+                            data-dismiss="modal">GUARDAR</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- SOLICITUD GUARDADA -->
+        <div class="modal fade bd-example-modal-lg" id="solicitud-guardada" data-backdrop="static" data-keyboard="false"
+            tabindex="-1" aria-labelledby="solicitud-guardada-Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div style="display: flex; justify-content: center;">
+                            <i class="far fa-check-circle"
+                                style="color: #2aa330; font-size: 5rem; width: 80px; height: 80px; text-align: center; padding-top: 0.75rem;"></i>
+                        </div>
+                        <h4 style="text-align: center; font-weight: 400; color: #666; margin: 15px;">
+                            Solicitud guardada</h4>
+                        <p style="text-align: center;">Se han guardado todos los datos completados hasta este
+                            momento.</b>
+                        </p>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <a href="home.html">
+                            <button type="button" class="btn btn-light">VOLVER AL HOME</button>
+                        </a>
+                        <a href="seguimientoPlanAccion.html">
+                            <button type="button" class="btn" style="background-color: #01688a; color: white;">VOLVER A
+                                LA
+                                SOLICITUD</button></a>
+                        </a>
+                        <button type="button" class="btn" style="background-color: #01688a; color: white;"
+                            data-toggle="modal" data-target="#enviado-a-aprobacion" data-dismiss="modal">ENVIAR A
+                            APROBACIÓN</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Solicitud enviada a aprobacion -->
+        <div class="modal fade" id="enviado-a-aprobacion" data-backdrop="static" data-keyboard="false" tabindex="1"
+            aria-labelledby="enviado-a-aprobacion-Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div style="display: flex; justify-content: center;">
+                            <i class="far fa-check-circle"
+                                style="color: #2aa330; font-size: 5rem; width: 80px; height: 80px; text-align: center; padding-top: 0.75rem;"></i>
+                        </div>
+                        <h4 style="text-align: center; font-weight: 400; color: #666; margin: 15px;">
+                            Solicitud enviada a aprobación</h4>
+                        <p style="text-align: center;">Se enviará una notificación por mail a los aprobadores.</b>
+                        </p>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <a href="home.html">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">VOLVER AL HOME</button>
+                        </a>
+                        <a href="seguimientoPlanAccion.html">
+                            <button type="button" class="btn" style="background-color: #01688a; color: white;">VOLVER A
+                                LA SOLICITUD</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enviar aprobación de nueva solicitud -->
+        <div class="modal fade" id="enviar-a-aprobacion" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="enviar-a-aprobacion-Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div style="display: flex; justify-content: center;">
+                            <i class="far fa-check-circle"
+                                style="color: #2aa330; font-size: 5rem; width: 80px; height: 80px; text-align: center; padding-top: 0.75rem;"></i>
+                        </div>
+                        <h4 style="text-align: center; font-weight: 400; color: #666; margin: 15px;">
+                            Enviar a aprobación</h4>
+                        <p style="text-align: center;">Se enviará una notificación por mail a los aprobadores.</b>
+                        </p>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <a href="seguimientoPlanAccion.html">
+                            <button type="button" class="btn" style="background-color: #01688a; color: white;">VOLVER A
+                                LA
+                                SOLICITUD</button>
+                        </a>
+                        <button type="button" class="btn"
+                            style="background-color: #01688a; color: white;">CONTINUAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Solicitud rechazada -->
+        <div class="modal fade" id="solicitud-rechazada" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="solicitud-rechazada-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div style="display: flex; justify-content: center;">
+                            <i class="far fa-times"
+                                style="color: #f20; font-size: 3rem; width: 80px; height: 80px; text-align: center; padding-top: 0.75rem;"></i>
+                        </div>
+                        <h4 style="text-align: center; font-weight: 400; color: #666; margin: 15px;">
+                            Solicitud rechazada</h4>
+                        <p style="text-align: center;">Se enviará una notificación por mail al solicitante.</b></p>
+                        <label for="">Motivo del rechazo</label>
+                        <textarea name="" id="" cols="10" rows="5" placeholder="{{texto}}"></textarea>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <a href="seguimientoPlanAccion.html">
+                            <button type="button" class="btn" style="background-color: #01688a; color: white;">VOLVER A
+                                LA
+                                SOLICITUD</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class="botones-footer">
+                <button class="btn btn-sm btn-secundario" data-toggle="modal" data-target="#cancelar-nueva-solicitud">
+                    CANCELAR
+                </button>
+                <button class="btn btn-sm" style="background-color: #01688a; color: #fff;" data-toggle="modal"
+                    data-target="#guardar-solicitud">
+                    GUARDAR SOLICITUD
+                </button>
+                <button class="btn btn-sm" style="background-color: #01688a; color: #fff;" data-toggle="modal"
+                    data-target="#enviar-a-aprobacion">
+                    ENVIAR A APROBACION
+                </button>
+            </div>
+        </footer>
+    </div>
+    </div>
+</body>
+
+</html>

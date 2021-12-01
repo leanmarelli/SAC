@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>Aprobacion/Cierre de</title>
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <div>
+            <header>
+                <nav class="headerSac">
+                    <div> <a href="home.html" class="titleHeader">SAC</a></div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item" aria-current="page"> <a href="main.html">
+                                    < Inicio</a>
+                            </li>
+                            <li class="breadcrumb-item"><a href="home.html">Solicitudes</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"
+                                style="color: #666; font-weight: bold; ">
+                                Nueva solicitud</li>
+                        </ol>
+                    </nav>
+                </nav>
+            </header>
+
+            <!-- Boton de Workflow de solicitud -->
+            <div class="collapseWorkflow">
+                <a data-toggle="collapse" href="#collapseWorkflow" role="button" aria-expanded="false"
+                    aria-controls="collapseWorkflow">
+                    <i class="fas fa-tasks"></i>
+                </a>
+            </div>
+
+            <!-- Contenido principal de Nueva Solicitud -->
+            <!-- Workflow de solicitud -->
+            <div style="display: flex;">
+                <div class="collapse mt-3" id="collapseWorkflow">
+                    <div class="card card-body p-0">
+                        <h6 class="pt-3 pl-3">Workflow de solicitud</h6>
+                        <div class="workflow-done p-2">
+                            <input class="mr-2" checked type="radio" name="" id=""> Iniciada <br>
+                            <span class="ml-4" style="color:#666">(04/05/2021)</span>
+                        </div>
+                        <div id="aprobacion" class="workflow-done p-2 mt-1 mb-1">
+                            <input class="mr-2" type="radio" name="" id=""> Aprobación <br>
+                            <i class="mr-4">(04/05/2021) </i>
+                        </div>
+                        <div id="cerrar-solicitud" class="p-2 workflow-current">
+                            <input class="mr-2" type="radio" name="" id=""> Cerrar solicitud <br>
+                            (04/05/2021)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario SAC -->
+                <div class="w-100">
+                    <div class="formularioHeader">
+                        <h6 class="mt-4">Formulario SAC Nro: AR000159</h6>
+                        <div class="tituloSolicitud">
+                            <div class="logoSAC">
+                                <img src="../img/Ternium.png" alt="">
+                                <h5>Sistema Administración de Cambio (SAC)</h5>
+                            </div>
+                            <div style="display: flex;">
+                                <div style="padding: 1rem;">
+                                    <p class="text-muted">Fecha de inicio de la solicitud</p>
+                                    <p style="color: #818A91;"><b>04/05/2021</b></p>
+                                </div>
+                                <div style="padding: 1rem;">
+                                    <p class="text-muted">Fecha de cierre</p>
+                                    <p style="color: #818A91;"><b>08/05/2021</b></p>
+                                </div>
+                                <div style="padding: 1rem;">
+                                    <p class="text-muted">Solicitante</p>
+                                    <p style="color: #818A91;"><b>Colandré</b></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grupoDeBotonesGrises mb-4">
+                            <div class="btn-group btn-group-sm grupoDeBotonesGrisesHome" role="group"
+                                aria-label="Basic example">
+                                <a href="solicitud.html" class="btn-secondary py-2 px-3 mr-1 " role="button" data-bs-toggle="button"
+                                    aria-pressed="true">
+                                    SOLICITUD
+                                </a>
+                                <a href="seguimientoPlanAccion.html" class="py-2 px-3 mr-1 btn-secondary" role="button" data-bs-toggle="button"
+                                    aria-pressed="true">
+                                    <!-- ACLARACION: Este es el boton que tiene la alerta de los campos incompletos invalidos. -->
+                                    SEGUIMIENTO DEL PLAN DE ACCIÓN <span class="badge"><i
+                                            class="fas fa-exclamation-circle text-danger fa-validation"></i></span>
+                                </a>
+                                <a href="aprobacionSolicitud.html" class="py-2 px-3 mr-1 btn-secondary " role="button" data-bs-toggle="button"
+                                    aria-pressed="true">
+                                    APROBACIÓN
+                                </a>
+                                <a href="cerrarSolicitud.html" class="py-2 px-3 mr-1 btn-secondary active" role="button" data-bs-toggle="button"
+                                    aria-pressed="true">
+                                    CIERRE
+                                </a>
+                                <!-- <a href="cerrarSolicitud.html" class="mr-1" data-toggle="collapse"
+                                    data-target="#cierreDeSolicitud" aria-expanded="false"
+                                    aria-controls="cierreDeSolicitud">
+                                    <button id="cierre" type="button">
+                                        CIERRE
+                                    </button>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="formularioContainer">
+
+                        <div class="alert alert-warning" role="alert">
+                            <i class="fas fa-exclamation-circle"></i>
+                            Todos los campos son obligatorios
+                        </div>
+                        <!-- CIERRE (APROBACION) -->
+                        <div id="cierreDeSolicitud" role="button" class="collapse show multi-collapse">
+
+                            <!-- 7- Checklist de Cierre de Cambio -->
+                            <h5 class="mt-4">7- Checklist de Cierre de Cambio</h5>
+                            <div class="mb-5">
+                                <div>
+                                    <label class="mt-2" for=""> Solicitudes Operativas:</label> <br>
+                                    <textarea name="" id="" cols="120" rows="8"
+                                        placeholder="Escriba aquí el detalle del cambio propuesto para su aprobación"
+                                        class="p-3" style="width: 60%;"></textarea> <br>
+                                    <input class="mr-3 mb-3 mt-4" type="checkbox" name="" id="">Los resultados del
+                                    cambio
+                                    fueron satisfactorios. <br>
+                                    <input class="mr-3 mb-3 mt-4" type="checkbox" name="" id="">Reestablecer a la
+                                    condición
+                                    original (cambio temporal o forzado) <br>
+                                    <input class="mr-3 mb-3 mt-4" type="checkbox" name="" id="">Documentación
+                                    actualizada
+                                    subida al SDT <br>
+                                    <input class="mr-3 mb-3 mt-4" type="checkbox" name="" id="">Documentación
+                                    actualizada
+                                    subida al DPP <br>
+                                    <input class="mr-3 mb-3 mt-4" type="checkbox" name="" id="">Manuales operativos
+                                    actualizados <br>
+                                    <input class="mr-3 mb-3 mt-4" type="checkbox" name="" id="">Datos actualizados en
+                                    arbol
+                                    de equipos SAP <br>
+                                    <input class="mr-3 mb-3 mt-4" type="checkbox" name="" id="">Planes de mantenimiento/
+                                    espoletas actualizados <br>
+                                    <input class="mr-3 mb-3 mt-4" type="checkbox" name="" id="">Los backup de software
+                                    antes
+                                    y despues están adjuntos y subidos a SAP <br>
+                                    <input class="mr-3 mb-3 mt-4" type="checkbox" name="" id="">Documentos / evidencias
+                                    adjuntos antes de cierre <br>
+                                    <input class="mr-3 mb-3 mt-4" type="checkbox" name="" id="">La capacitación fue
+                                    realizada, según matriz de perfil de puesto de RRHH <br>
+                                    <input class="mr-3 mb-3 mt-4" type="checkbox" name="" id="">ARP actualizado <br>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <label for="" class="mt-4">Adjuntar Checklist verificación de eficacia (RSPA)
+                                        firmado:</label>
+                                    <button class="btn btnAdjuntarArchivos mb-3">
+                                        <p><i class="fas fa-upload mr-2"></i>Adjuntar archivos</p>
+                                    </button>
+                                    <!-- ARCHIVO ADJUNTADO -->
+                                    <div class="archivo-adjunto">
+                                        <p class="mb-0"> Archivo 1.pdf... </p> 
+                                        <i class="fas fa-times borrar-adjunto"></i>
+                                    </div>
+                                    <label for="">Adjuntar documentación adicional:</label>
+                                    <button class="btn btnAdjuntarArchivos mb-3">
+                                        <p><i class="fas fa-upload mr-2"></i>Adjuntar archivos</p>
+                                    </button>
+                                    <label for="">Adjuntar planilla asistencia capacitación:</label>
+                                    <button class="btn btnAdjuntarArchivos mb-3">
+                                        <p><i class="fas fa-upload mr-2"></i>Adjuntar archivos</p>
+                                    </button>
+                                    <!-- ARCHIVO ADJUNTADO -->
+                                    <div class="archivo-adjunto">
+                                        <p class="mb-0"> Archivo 1.pdf... </p>
+                                        <i class="fas fa-times borrar-adjunto"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN DE CREACION DEL FORM NUEVA SOLICITUD -->
+
+            <!------ POPUP'S ------>
+            <!-- Cancelar nueva solicitud -->
+            <div class="modal fade" id="cancelar-nueva-solicitud" data-backdrop="static" data-keyboard="false"
+                tabindex="-1" aria-labelledby="cancelar-nueva-solicitud-Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div style="display: flex; justify-content: center;">
+                                <i class="fas fa-exclamation"
+                                    style="border: 3px solid #f90; color: #f90; border-radius: 500rem; font-size: 3rem; width: 80px; height: 80px; text-align: center; padding-top: 0.75rem;"></i>
+                            </div>
+                            <h4 style="text-align: center; font-weight: 400; color: #666; margin: 15px;">
+                                Cancelar nueva solicitud</h4>
+                            <p style="text-align: center;">Si cancelas en este momento perderás los cambios no
+                                guardados.</b></p>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">VOLVER A LA
+                                SOLICITUD</button>
+                            <button type="button" class="btn"
+                                style="background-color: #01688a; color: white;">CONTINUAR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enviar aprobación de nueva solicitud -->
+            <div class="modal fade" id="enviar-a-aprobacion" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="enviar-a-aprobacion-Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div style="display: flex; justify-content: center;">
+                                <i class="far fa-check-circle"
+                                    style="color: #2aa330; font-size: 5rem; width: 80px; height: 80px; text-align: center; padding-top: 0.75rem;"></i>
+                            </div>
+                            <h4 style="text-align: center; font-weight: 400; color: #666; margin: 15px;">
+                                Cerrar solicitud.</h4>
+                            <p style="text-align: center;">Se te enviará una notificación por mail.</b>
+                            </p>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">VOLVER A LA
+                                SOLICITUD</button>
+                            <button type="button" class="btn"
+                                style="background-color: #01688a; color: white;">SALIR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GUARDAR SOLICITUD -->
+            <div class="modal fade" id="guardar-solicitud" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="guardar-solicitud-solicitud-Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div style="display: flex; justify-content: center;">
+                                <i class="far fa-check-circle"
+                                    style="color: #2aa330; font-size: 5rem; width: 80px; height: 80px; text-align: center; padding-top: 0.75rem;"></i>
+                            </div>
+                            <h4 style="text-align: center; font-weight: 400; color: #666; margin: 15px;">
+                                Guardar solicitud</h4>
+                            <p style="text-align: center;">Se guardaran todos los datos completados hasta este
+                                momento.</b>
+                            </p>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">VOLVER A LA
+                                SOLICITUD</button>
+
+                            <button type="button" class="btn" style="background-color: #01688a; color: white;"
+                                data-toggle="modal" data-target="#solicitud-guardada"
+                                data-dismiss="modal">GUARDAR</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- SOLICITUD GUARDADA -->
+            <div class="modal fade bd-example-modal-lg" id="solicitud-guardada" data-backdrop="static"
+                data-keyboard="false" tabindex="-1" aria-labelledby="solicitud-guardada-Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div style="display: flex; justify-content: center;">
+                                <i class="far fa-check-circle"
+                                    style="color: #2aa330; font-size: 5rem; width: 80px; height: 80px; text-align: center; padding-top: 0.75rem;"></i>
+                            </div>
+                            <h4 style="text-align: center; font-weight: 400; color: #666; margin: 15px;">
+                                Solicitud guardada</h4>
+                            <p style="text-align: center;">Se han guardado todos los datos completados hasta este
+                                momento.</b>
+                            </p>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <a href="home.html">
+                                <button type="button" class="btn btn-light">VOLVER AL HOME</button>
+                            </a>
+                            <a href="seguimientoPlanAccion.html">
+                                <button type="button" class="btn"
+                                    style="background-color: #01688a; color: white;">VOLVER A LA
+                                    SOLICITUD</button></a>
+                            </a>
+                            <button type="button" class="btn" style="background-color: #01688a; color: white;"
+                                data-toggle="modal" data-target="#enviado-a-aprobacion" data-dismiss="modal">CERRAR
+                                SOLICITUD</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Solicitud enviada a aprobacion -->
+            <div class="modal fade" id="enviado-a-aprobacion" data-backdrop="static" data-keyboard="false" tabindex="1"
+                aria-labelledby="enviado-a-aprobacion-Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div style="display: flex; justify-content: center;">
+                                <i class="far fa-check-circle"
+                                    style="color: #2aa330; font-size: 5rem; width: 80px; height: 80px; text-align: center; padding-top: 0.75rem;"></i>
+                            </div>
+                            <h4 style="text-align: center; font-weight: 400; color: #666; margin: 15px;">
+                                Cerrar solicitud.</h4>
+                            <p style="text-align: center;">Se enviará una notificación por mail a los aprobadores.</b>
+                            </p>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <a href="home.html">
+                                <button type="button" class="btn btn-light" data-dismiss="modal">VOLVER AL HOME</button>
+                            </a>
+                            <a href="cerrarSolicitud.html">
+                                <button type="button" class="btn"
+                                    style="background-color: #01688a; color: white;">VOLVER A LA
+                                    SOLICITUD</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="botones-footer">
+                    <button class="btn btn-sm"
+                        style="background-color: #FFF; color: #01688a; border: #c4c4c4 1px solid;" data-toggle="modal"
+                        data-target="#cancelar-nueva-solicitud">
+                        CANCELAR
+                    </button>
+                    <button class="btn btn-sm" style="background-color: #01688a; color: #fff;" data-toggle="modal"
+                        data-target="#guardar-solicitud">
+                        GUARDAR SOLICITUD
+                    </button>
+                    <button class="btn btn-sm" style="background-color: #01688a; color: #fff;" data-toggle="modal"
+                        data-target="#enviar-a-aprobacion">
+                        CERRAR SOLICITUD
+                    </button>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
