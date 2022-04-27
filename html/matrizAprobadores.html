@@ -22,6 +22,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Home</title>
 </head>
 
@@ -169,7 +172,8 @@
                     </div>
                     <div class="d-flex justify-content-start" style="position: relative; top: 0;">
                         <div class="dropleft">
-                            <button class="btn btnConfiguracion mr-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btnConfiguracion mr-2" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-expanded="false">
                                 <i class="far fa-cog"></i>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -242,135 +246,27 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="btnCollapseFiltros" data-toggle="collapse"
-                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="btnCollapseFiltros" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
                             <i class="far fa-angle-down"></i>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- FILTRO DE SOLICITUD -->
-            <div class="botonesSolicitudesTotales">
-                <button class="btn-total btn-total-azul">
-                    <div class="d-flex flex-column align-items-start">
-                        <span>Total en curso</span>
-                    </div>
-                    <div class="f-size-25">
-                        <span class="h3">300</span>
-                    </div>
-                </button>
-                <button class="btn-total btn-total-blanco">
-                    <div class="d-flex flex-column align-items-start">
-                        <span>Total cerradas</span>
-                    </div>
-                    <div>
-                        <span class="h3">50</span>
-                    </div>
-                </button>
-                <button class="btn-total btn-total-blanco">
-                    <div class="d-flex flex-column align-items-start">
-                        <span>Total vencidas</span>
-                    </div>
-                    <div>
-                        <span class="h3">20</span>
-                    </div>
-                </button>
-                <!-- nuevo -->
-                <button class="btn-total btn-total-blanco">
-                    <div class="d-flex flex-column align-items-start">
-                        <span>Pendientes de aprobación</span>
-                    </div>
-                    <div>
-                        <span class="h3">20</span>
-                    </div>
-                </button>
-                <button class="btn-total btn-total-blanco">
-                    <div class="d-flex flex-column align-items-start">
-                        <span>Solicitudes rechazadas</span>
-                    </div>
-                    <div>
-                        <span class="h3">20</span>
-                    </div>
-                </button>
-                <!-- fin nuevo -->
-            </div>
-
             <div class="ListaDeSolicitudes">
                 <div class="titulo-y-prioridad">
-                    <h3>Lista de Solicitudes</h3>
-                    <div class="prioridad">
-                        <ul>
-                            <li>
-                                <div class="mr-2">Nivel de riesgo:</div>
-                            </li>
-                            <li>
-                                <button class="btn-sm btn-muy-alta" style="border: 1px solid #f30;">
-                                    <p style="width: max-content; margin: 0;">MUY ALTA</p>
-                                    <p style="width: max-content; margin: 0;"><b>4</b></p>
-                                </button>
-                            </li>
-                            <li>
-                                <button class="btn-sm btn-alta" style="border: 1px solid #F19E39;">
-                                    <p style="width: max-content; margin: 0;">ALTA</p>
-                                    <p style="width: max-content; margin: 0;"><b>4</b></p>
-                                </button>
-                            </li>
-                            <li>
-                                <button class="btn-sm btn-media" style="border: 1px solid #FFD27C">
-                                    <p style="width: max-content; margin: 0;">MEDIA</p>
-                                    <p style="width: max-content; margin: 0;"><b>20</b></p>
-                                </button>
-                            </li>
-                            <li>
-                                <button class="btn-sm btn-baja" style="border: 1px solid #FFE9CE;">
-                                    <p style="width: max-content; margin: 0;">BAJA</p>
-                                    <p style="width: max-content; margin: 0;"><b>42</b></p>
-                                </button>
-                            </li>
-                            <li>
-                                <button class="btn-sm btn-todos" style="border: 1px solid #01688A;">
-                                    <p style="width: max-content; margin: 0;">TODOS</p>
-                                    <p style="width: max-content; margin: 0;"><b>40</b></p>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Botones de lista de solicitudes -->
-                <div class="BotonesListaDeSolicitudes">
-                    <div class="BotonesListaDeSolicitudesDerecha">
-                        <div class="btn-group btn-group-sm btn-group-toggle grupoDeBotonesGrises" data-toggle="buttons">
-                            <label class="btn btn-secondary active">
-                                <input type="radio" name="options" id="option1" autocomplete="off" checked> MIS
-                                SOLICITUDES
-                            </label>
-                            <label class="btn btn-secondary">
-                                <input type="radio" name="options" id="option3" autocomplete="off"> SOLICITUDES A
-                                APROBAR
-                            </label>
-                        </div>
-                        <button class="btn-sm btnVerTodas ml-3">
-                            VER TODAS
-                        </button>
-                    </div>
-                    <div class="BotonesListaDeSolicitudesDerecha">
-                        <div style="height: 100%;">
-                            <a href="solicitud.html" class="btn-sm btnNuevaSolicitud pr-4 pl-4">
-                                NUEVA SOLICITUD
-                            </a>
-                            <a href="#" class="btn-sm btnNuevaSolicitud mr-1">
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </div>
-                        <div>
-                            <div>
-                                <label for="" style="font-size: 14px; margin: 0;">Buscar Solicitud</label>
-                            </div>
-                            <div class="buscador">
-                                <input type="search" placeholder="Nombre, Estado, UT, Clase de equipo">
-                                <button class="btn-sm"> <i class="fas fa-search" style="color: #999;"></i> </button>
-                            </div>
+                    <h3>Matriz de aprobadores</h3>
+                    <div class="BotonesListaDeSolicitudesDerecha pb-3">
+                        <a href="solicitud.html" class="btn-sm btnNuevaSolicitud pr-4 pl-4">
+                            NUEVA SOLICITUD
+                        </a>
+                        <a href="#" class="btn-sm btnNuevaSolicitud mr-1">
+                            <i class="fas fa-download"></i>
+                        </a>
+                        <div class="buscador">
+                            <input type="search" placeholder="Nombre, Estado, UT, Clase de equipo">
+                            <button class="btn-sm"> <i class="fas fa-search" style="color: #999;"></i> </button>
                         </div>
                     </div>
                 </div>
@@ -379,7 +275,7 @@
                 <div class="tableContainer">
                     <div
                         class="table-responsive-lg table-responsive-md table-responsive-lg table-responsive-xxl table-responsive">
-                        <table class="table-sm table-striped" style="width: 100%; border-spacing: 5rem;">
+                        <table class="table-sm" style="width: 100%; border-spacing: 5rem;">
                             <thead>
                                 <tr style="border-bottom: 2px solid #f90; border-top: 1px solid #666;">
                                     <td class="pt-2 pb-2" scope="col"></td>
@@ -387,41 +283,10 @@
                                         <div
                                             style="display: flex; flex-direction: row;justify-content: space-between; width: max-content;">
                                             <div>
-                                                Número de solicitud
+                                                <b>Planta</b>
                                             </div>
-                                            <div class="m-auto">
-                                                <i class="fas fa- "></i>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td style="padding: 10px 10px 10px 5px; ">
-                                        <div
-                                            style="display: flex; flex-direction: row;justify-content: space-between; width: max-content;">
-                                            <div>
-                                                Titulo de la solicitud
-                                            </div>
-                                            <div class="m-auto">
-                                                <i class="fas fa-sort"></i>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td style="padding: 10px 10px 10px 5px; ">
-                                        <div style="display: flex; flex-direction: row;justify-content: space-between;">
-                                            <!-- Estado -->
-                                            <div class="dropdown">
-                                                <a class="btn btn-light dropdown-toggle dropdown-toggle-home input-estado px-2"
-                                                    href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-                                                    aria-haspopup="true" aria-expanded="false">
-                                                    Estado
-                                                </a>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                    <a class="dropdown-item" href="#">Modificación</a>
-                                                    <a class="dropdown-item" href="#">Eliminación</a>
-                                                    <a class="dropdown-item" href="#">Agregado</a>
-                                                </div>
-                                            </div>
-                                            <div class="m-auto">
-                                                <i class="fas fa-sort"></i>
+                                            <div class="ml-2 my-auto">
+                                                <i class="far fa-sort-alt"></i>
                                             </div>
                                         </div>
                                     </td>
@@ -429,21 +294,10 @@
                                         <div
                                             style="display: flex; flex-direction: row;justify-content: space-between; width: max-content;">
                                             <div>
-                                                Nivel de riesgo
+                                                <b>Proceso</b>
                                             </div>
-                                            <div class="m-auto">
-                                                <i class="fas fa-sort"></i>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td style="padding: 10px 10px 10px 5px; ">
-                                        <div
-                                            style="display: flex; flex-direction: row;justify-content: space-between; width: max-content;">
-                                            <div>
-                                                Última modificación
-                                            </div>
-                                            <div class="m-auto">
-                                                <i class="fas fa-sort"></i>
+                                            <div class="ml-2 my-auto">
+                                                <i class="far fa-sort-alt"></i>
                                             </div>
                                         </div>
                                     </td>
@@ -451,28 +305,50 @@
                                         <div
                                             style="display: flex; flex-direction: row;justify-content: space-between; width: max-content;">
                                             <div>
-                                                Vencimiento
+                                                <b>Línea</b>
                                             </div>
-                                            <div class="m-auto">
-                                                <i class="fas fa-sort"></i>
+                                            <div class="ml-2 my-auto">
+                                                <i class="far fa-sort-alt"></i>
                                             </div>
                                         </div>
                                     </td>
                                     <td style="padding: 10px 10px 10px 5px; ">
                                         <div
-                                            style="display: flex; flex-direction: row;justify-content: space-between;width: max-content;">
+                                            style="display: flex; flex-direction: row;justify-content: space-between; width: max-content;">
                                             <div>
-                                                Ubicación técnica
+                                                <b>Riesgo</b>
                                             </div>
-                                            <div class="ml-4 m-auto">
-                                                <i class="fas fa-sort"></i>
+                                            <div class="ml-2 my-auto">
+                                                <i class="far fa-sort-alt"></i>
                                             </div>
                                         </div>
                                     </td>
-                                    <td style="padding: 10px 10px 10px 15px; border-left: 1px solid #c4c4c4;">
+                                    <td style="padding: 10px 10px 10px 5px; ">
+                                        <div
+                                            style="display: flex; flex-direction: row;justify-content: space-between; width: max-content;">
+                                            <div>
+                                                <b>Area</b>
+                                            </div>
+                                            <div class="ml-2 my-auto">
+                                                <i class="far fa-sort-alt"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="padding: 10px 10px 10px 5px; ">
+                                        <div
+                                            style="display: flex; flex-direction: row;justify-content: space-between; width: max-content;">
+                                            <div>
+                                                <b>Aprobador</b>
+                                            </div>
+                                            <div class="ml-2 my-auto">
+                                                <i class="far fa-sort-alt"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="padding: 10px 10px 10px 15px;">
                                         <div style="text-align: center;">
                                             <div>
-                                                Acciones
+                                                <b>Acciones</b>
                                             </div>
                                         </div>
                                     </td>
@@ -481,91 +357,303 @@
                             <tbody>
                                 <tr>
                                     <th class="border-left-x" scope="row" class="btn-sm btn-muy-alta" type="button"
-                                        data-toggle="modal" data-target="#detalleMuyAlta"><input
-                                            style="margin: .9rem 0 0 1.5rem;" type="checkbox">
+                                        data-toggle="modal" data-target="#detalleMuyAlta">
                                     </th>
-                                    <td scope="row">AR000154</td>
-                                    <td>Modificación longitud palanca freno PG832</td>
-                                    <td>
-                                        <div class="d-flex align-items-center">
-                                            <div class="enEdicion mr-2"></div>
-                                            <p style="opacity: 100%; margin: 0;">EN EDICIÓN</p>
+                                    <td scope="row">
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">PLANTA</p>
+                                            <p class="mb-0"> <b>PLANTA GUERRERO</b> </p>
+                                            <p class="mb-0 text-muted">HM</p>
                                         </div>
                                     </td>
-                                    <td>ALTO</td>
-                                    <td>03/05/2021</td>
-                                    <td>21/02/2021</td>
-                                    <td>Divers</td>
-                                    <td style="border-left: 1px solid #c4c4c4; text-align: center;"><i
-                                            class="fas fa-download fa-download-tb" title="Descargar"></i><i
-                                            class="far fa-eye" title="Ver"></i><i class="fas fa-file-import"
-                                            title="Importar"></i></td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">PROCESO</p>
+                                            <p class="mb-0"> <b>LAMINADO EN FRÍO Y ACABADO</b> </p>
+                                            <p class="mb-0 text-muted">HM-LFR</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">LÍNEA</p>
+                                            <p class="mb-0"> <b>PLANTA REGENERADORA DE ACIDO 2</b> </p>
+                                            <p class="mb-0 text-muted">HM-LFR-LNDR</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">NIVEL DE RIESGO</p>
+                                            <p class="mb-0"> <button class="btn btn-sm btn-riesgo">ALTA</button> </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">AREA</p>
+                                            <p class="mb-0"> <b>OPERACIONES</b> </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media d-flex align-items-center">
+                                            <img src="../img/user.png" class="mr-3" style="width: 2.5rem;" alt="usuario">
+                                            <div class="media-body">
+                                                <p class="mb-0"> <b>Roberto Sifón</b> </p>
+                                                <p class="mb-0 text-muted">TERNIUM/Sifón</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center justify-content-around">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                <label class="custom-control-label" for="customSwitch1"></label>
+                                            </div>
+                                            <i class="fas fa-pencil" style="color: #017DA6;"></i>
+                                            <i class="fas fa-history" style="color: #017DA6; background-color: transparent;"></i>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <th class="border-left-o" scope="row" class="btn-sm btn-muy-alta" type="button"
-                                        data-toggle="modal" data-target="#detalleMuyAlta"><input
-                                            style="margin: .9rem 0 0 1.5rem;" type="checkbox">
+                                    <th class="border-left-x" scope="row" class="btn-sm btn-muy-alta" type="button" data-toggle="modal"
+                                        data-target="#detalleMuyAlta">
                                     </th>
-                                    <td scope="row">AR000154</td>
-                                    <td>Modificación longitud palanca freno PG832</td>
-                                    <td>
-                                        <div class="d-flex align-items-center">
-                                            <div class="sinAprobar mr-2"></div>
-                                            <p style="opacity: 100%; margin: 0;">SIN APROBAR</p>
+                                    <td scope="row">
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">PLANTA</p>
+                                            <p class="mb-0"> <b>PLANTA GUERRERO</b> </p>
+                                            <p class="mb-0 text-muted">HM</p>
                                         </div>
                                     </td>
-                                    <td>ALTO</td>
-                                    <td>03/05/2021</td>
-                                    <td>21/02/2021</td>
-                                    <td>Divers</td>
-                                    <td style="border-left: 1px solid #c4c4c4; text-align: center"><i
-                                            class="fas fa-download fa-download-tb" title="Descargar"></i><i
-                                            class="far fa-eye" title="Ver"></i><i class="fas fa-file-import"
-                                            title="Importar"></i></td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">PROCESO</p>
+                                            <p class="mb-0"> <b>LAMINADO EN FRÍO Y ACABADO</b> </p>
+                                            <p class="mb-0 text-muted">HM-LFR</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">LÍNEA</p>
+                                            <p class="mb-0"> <b>PLANTA REGENERADORA DE ACIDO 2</b> </p>
+                                            <p class="mb-0 text-muted">HM-LFR-LNDR</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">NIVEL DE RIESGO</p>
+                                            <p class="mb-0"> <button class="btn btn-sm btn-riesgo">ALTA</button> </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">AREA</p>
+                                            <p class="mb-0"> <b>OPERACIONES</b> </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media d-flex align-items-center">
+                                            <img src="../img/user.png" class="mr-3" style="width: 2.5rem;" alt="usuario">
+                                            <div class="media-body">
+                                                <p class="mb-0"> <b>Roberto Sifón</b> </p>
+                                                <p class="mb-0 text-muted">TERNIUM/Sifón</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center justify-content-around">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                <label class="custom-control-label" for="customSwitch1"></label>
+                                            </div>
+                                            <i class="fas fa-pencil" style="color: #017DA6;"></i>
+                                            <i class="fas fa-history" style="color: #017DA6; background-color: transparent;"></i>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <th class="border-left-x" scope="row" class="btn-sm btn-muy-alta" type="button"
-                                        data-toggle="modal" data-target="#detalleMuyAlta"><input
-                                            style="margin: .9rem 0 0 1.5rem;" type="checkbox">
+                                    <th class="border-left-x" scope="row" class="btn-sm btn-muy-alta" type="button" data-toggle="modal"
+                                        data-target="#detalleMuyAlta">
                                     </th>
-                                    <td scope="row">AR000154</td>
-                                    <td>Modificación longitud palanca freno PG832</td>
-                                    <td>
-                                        <div class="d-flex align-items-center">
-                                            <div class="atrasado mr-2"></div>
-                                            <p style="opacity: 100%; margin: 0;">ATRASADO</p>
+                                    <td scope="row">
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">PLANTA</p>
+                                            <p class="mb-0"> <b>PLANTA GUERRERO</b> </p>
+                                            <p class="mb-0 text-muted">HM</p>
                                         </div>
                                     </td>
-                                    <td>ALTO</td>
-                                    <td>03/05/2021</td>
-                                    <td>21/02/2021</td>
-                                    <td>Divers</td>
-                                    <td style="border-left: 1px solid #c4c4c4; text-align: center"><i
-                                            class="fas fa-download fa-download-tb" title="Descargar"></i><i
-                                            class="far fa-eye" title="Ver"></i><i class="fas fa-file-import"
-                                            title="Importar"></i></td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">PROCESO</p>
+                                            <p class="mb-0"> <b>LAMINADO EN FRÍO Y ACABADO</b> </p>
+                                            <p class="mb-0 text-muted">HM-LFR</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">LÍNEA</p>
+                                            <p class="mb-0"> <b>PLANTA REGENERADORA DE ACIDO 2</b> </p>
+                                            <p class="mb-0 text-muted">HM-LFR-LNDR</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">NIVEL DE RIESGO</p>
+                                            <p class="mb-0"> <button class="btn btn-sm btn-riesgo">ALTA</button> </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">AREA</p>
+                                            <p class="mb-0"> <b>OPERACIONES</b> </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <div class="media d-flex align-items-center pr-3" style="border-right: solid 1px #c4c4c4;">
+                                                <img src="../img/user.png" class="mr-3" style="width: 2.5rem;" alt="usuario">
+                                                <div class="media-body">
+                                                    <p class="mb-0"> <b>Roberto Sifón</b> </p>
+                                                    <p class="mb-0 text-muted">TERNIUM/Sifón</p>
+                                                </div>
+                                            </div>
+                                            <div class="media d-flex align-items-center pl-3">
+                                                <img src="../img/user.png" class="mr-3" style="width: 2.5rem;" alt="usuario">
+                                                <div class="media-body">
+                                                    <p class="mb-0"> <b>Roberto Sifón</b> </p>
+                                                    <p class="mb-0 text-muted">TERNIUM/Sifón</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center justify-content-around">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                <label class="custom-control-label" for="customSwitch1"></label>
+                                            </div>
+                                            <i class="fas fa-pencil" style="color: #017DA6;"></i>
+                                            <i class="fas fa-history" style="color: #017DA6; background-color: transparent;"></i>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <th class="border-left-o" scope="row" class="btn-sm btn-muy-alta" type="button"
-                                        data-toggle="modal" data-target="#detalleMuyAlta"><input
-                                            style="margin: .9rem 0 0 1.5rem;" type="checkbox">
+                                    <th class="border-left-x" scope="row" class="btn-sm btn-muy-alta" type="button" data-toggle="modal"
+                                        data-target="#detalleMuyAlta">
                                     </th>
-                                    <td scope="row">AR000154</td>
-                                    <td>Modificación longitud palanca freno PG832</td>
-                                    <td>
-                                        <div class="d-flex align-items-center">
-                                            <div class="aprobado mr-2"></div>
-                                            <p style="opacity: 100%; margin: 0;">APROBADO</p>
+                                    <td scope="row">
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">PLANTA</p>
+                                            <p class="mb-0"> <b>PLANTA GUERRERO</b> </p>
+                                            <p class="mb-0 text-muted">HM</p>
                                         </div>
                                     </td>
-                                    <td>ALTO</td>
-                                    <td>03/05/2021</td>
-                                    <td>21/02/2021</td>
-                                    <td>Divers</td>
-                                    <td style="border-left: 1px solid #c4c4c4; text-align: center"><i
-                                            class="fas fa-download fa-download-tb" title="Descargar"></i><i
-                                            class="far fa-eye" title="Ver"></i><i class="fas fa-file-import"
-                                            title="Importar"></i></td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">PROCESO</p>
+                                            <p class="mb-0"> <b>LAMINADO EN FRÍO Y ACABADO</b> </p>
+                                            <p class="mb-0 text-muted">HM-LFR</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">LÍNEA</p>
+                                            <p class="mb-0"> <b>PLANTA REGENERADORA DE ACIDO 2</b> </p>
+                                            <p class="mb-0 text-muted">HM-LFR-LNDR</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">NIVEL DE RIESGO</p>
+                                            <p class="mb-0"> <button class="btn btn-sm btn-riesgo">ALTA</button> </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">AREA</p>
+                                            <p class="mb-0"> <b>OPERACIONES</b> </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <div class="media d-flex flex-column">
+                                                <input type="text">
+                                                <div class="d-flex align-items-center ml-2">
+                                                    <input class="p-2 m-0" type="checkbox" name="" id="">
+                                                    <label class="p-2 mb-0">Asignacion temporal</label>
+                                                </div>
+                                            </div>
+                                            <div class="px-2">
+                                                <input type="date" class="w-10" name="" id="">
+                                                <input type="date" class="w-10" name="" id="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center justify-content-around">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                <label class="custom-control-label" for="customSwitch1"></label>
+                                            </div>
+                                            <i class="fas fa-pencil" style="color: #017DA6;"></i>
+                                            <i class="fas fa-history" style="color: #017DA6; background-color: transparent;"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="border-left-x" scope="row" class="btn-sm btn-muy-alta" type="button" data-toggle="modal"
+                                        data-target="#detalleMuyAlta">
+                                    </th>
+                                    <td scope="row">
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">PLANTA</p>
+                                            <p class="mb-0"> <b>PLANTA GUERRERO</b> </p>
+                                            <p class="mb-0 text-muted">HM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">PROCESO</p>
+                                            <p class="mb-0"> <b>LAMINADO EN FRÍO Y ACABADO</b> </p>
+                                            <p class="mb-0 text-muted">HM-LFR</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">LÍNEA</p>
+                                            <p class="mb-0"> <b>PLANTA REGENERADORA DE ACIDO 2</b> </p>
+                                            <p class="mb-0 text-muted">HM-LFR-LNDR</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">NIVEL DE RIESGO</p>
+                                            <p class="mb-0"> <button class="btn btn-sm btn-riesgo">ALTA</button> </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column">
+                                            <p class="mb-0 text-muted">AREA</p>
+                                            <p class="mb-0"> <b>OPERACIONES</b> </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media d-flex flex-column">
+                                            <input type="text">
+                                            <div class="d-flex align-items-center ml-2">
+                                                <input class="p-2 m-0" type="checkbox" name="" id=""> 
+                                                <label class="p-2 mb-0">Asignacion temporal</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center justify-content-around">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                <label class="custom-control-label" for="customSwitch1"></label>
+                                            </div>
+                                            <i class="fas fa-pencil" style="color: #017DA6;"></i>
+                                            <i class="fas fa-history" style="color: #017DA6; background-color: transparent;"></i>
+                                        </div>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -573,7 +661,6 @@
                         </table>
                     </div>
                 </div>
-
 
                 <!-- Paginador del listado de solicitudes -->
                 <div class="paginador mt-4 d-flex justify-content-end">
@@ -794,7 +881,8 @@
                             <div>
                                 <!-- PAISES -->
                                 <div class="items-filtros" id="headingOne">
-                                    <div class="m-0 mb-2 py-0 px-2 d-flex justify-content-between align-items-center bckg-white">
+                                    <div
+                                        class="m-0 mb-2 py-0 px-2 d-flex justify-content-between align-items-center bckg-white">
                                         <button class="btn btn-block text-left d-flex align-items-center"
                                             style="color: #666;">
                                             <input type="checkbox">
@@ -805,7 +893,8 @@
                                 </div>
                                 <!-- PLANTAS -->
                                 <div class="items-filtros" id="headingTwo">
-                                    <div class="m-0 mb-2 py-0 px-2 d-flex justify-content-between align-items-center bckg-white">
+                                    <div
+                                        class="m-0 mb-2 py-0 px-2 d-flex justify-content-between align-items-center bckg-white">
                                         <button class="btn btn-block text-left d-flex align-items-center"
                                             style="color: #666;">
                                             <input type="checkbox">
@@ -816,7 +905,8 @@
                                 </div>
                                 <!-- DEPARTAMENTO -->
                                 <div class="items-filtros" id="headingThree">
-                                    <div class="m-0 mb-2 py-0 px-2 d-flex justify-content-between align-items-center bckg-white">
+                                    <div
+                                        class="m-0 mb-2 py-0 px-2 d-flex justify-content-between align-items-center bckg-white">
                                         <button class="btn btn-block text-left d-flex align-items-center"
                                             style="color: #666;">
                                             <input type="checkbox">
@@ -827,7 +917,8 @@
                                 </div>
                                 <!-- LINEAS -->
                                 <div class="items-filtros" id="headingOne">
-                                    <div class="m-0 mb-2 py-0 px-2 d-flex justify-content-between align-items-center bckg-white">
+                                    <div
+                                        class="m-0 mb-2 py-0 px-2 d-flex justify-content-between align-items-center bckg-white">
                                         <button class="btn btn-block text-left d-flex align-items-center"
                                             style="color: #666;">
                                             <input type="checkbox">
@@ -845,7 +936,8 @@
 
             <div class="w-100" style="position: absolute; bottom: 0;">
                 <button class="btn-secondary w-100"
-                    style="background-color: #f90 !important; color: #fff !important; border: none;">APLICAR (2)</button>
+                    style="background-color: #f90 !important; color: #fff !important; border: none;">APLICAR
+                    (2)</button>
             </div>
 
         </div>
@@ -854,7 +946,6 @@
 
 
 
-    <script src="script.js"></script>
 </body>
 
 </html>

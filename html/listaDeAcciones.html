@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="contenedor home-container">
+        <div class="menu-izquierdo">
+            <div class="area"></div>
+            <nav class="main-menu">
+                <div class="logoMenuDesplegable">
+                    <img src="../img/logoTernium.png" alt="logo">
+                </div>
+                <ul>
+                    <li class="has-subnav">
+                        <a href="#">
+                            <i class="fa fa-file fa-2x"></i>
+                            <span class="nav-text">
+                                Gestión de riesgos
+                            </span>
+                        </a>
+                    </li>
+                    <li class="has-subnav">
+                        <a href="#">
+                            <i class="fa fa-layer-group fa-2x"></i>
+                            <span class="nav-text">
+                                Acciones
+                            </span>
+                        </a>
+
+                    </li>
+                    <li class="has-subnav">
+                        <a href="#">
+                            <i class="fa fa-desktop fa-2x"></i>
+                            <span class="nav-text">
+                                Gestión
+                            </span>
+                        </a>
+                    </li>
+                    <li class="has-subnav">
+                        <a href="#">
+                            <i class="fa fa-chart-line fa-2x"></i>
+                            <span class="nav-text">
+                                Gestión de riesgos
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contenido-principal">
+            <header>
+                <nav class="headerSacHome">
+                    <div class="pos-f-t">
+                        <nav class="navbar navbar-dark">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </nav>
+                    </div>
+                    <div> <a href="home.html" class="titleHeader">SAC</a></div>
+                </nav>
+                <nav class="my-2 ml-3" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item" aria-current="page">
+                            <a href="main.html">
+                                < Inicio</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a class="active" href="listaDeAcciones.html">Acciones</a>
+                        </li>
+                    </ol>
+                </nav>
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-dark-hamburger px-4">
+                        <ul class="hamburger-navbar-content m-0">
+                            <li class="has-subnav">
+                                <a href="#">
+                                    <i class="fa fa-file fa-2x"></i>
+                                    <span class="nav-text">
+                                        Gestión de riesgos
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="has-subnav">
+                                <a href="#">
+                                    <i class="fa fa-layer-group fa-2x"></i>
+                                    <span class="nav-text">
+                                        Acciones
+                                    </span>
+                                </a>
+
+                            </li>
+                            <li class="has-subnav">
+                                <a href="#">
+                                    <i class="fa fa-desktop fa-2x"></i>
+                                    <span class="nav-text">
+                                        Gestión
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="has-subnav">
+                                <a href="#">
+                                    <i class="fa fa-chart-line fa-2x"></i>
+                                    <span class="nav-text">
+                                        Gestión de riesgos
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <div class="ListaDeSolicitudes">
+                <div class="titulo-y-prioridad">
+                    <h3>Lista de Acciones</h3>
+                    <div class="prioridad">
+                        <ul>
+                            <li>
+                                <div class="mr-2">Nivel de riesgo:</div>
+                            </li>
+                            <li>
+                                <button class="btn-sm btn-muy-alta" style="border: 1px solid #f30;">
+                                    <p style="width: max-content; margin: 0;">MUY ALTA</p>
+                                    <p style="width: max-content; margin: 0;"><b>4</b></p>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn-sm btn-alta" style="border: 1px solid #F19E39;">
+                                    <p style="width: max-content; margin: 0;">ALTA</p>
+                                    <p style="width: max-content; margin: 0;"><b>4</b></p>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn-sm btn-media" style="border: 1px solid #FFD27C">
+                                    <p style="width: max-content; margin: 0;">MEDIA</p>
+                                    <p style="width: max-content; margin: 0;"><b>20</b></p>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn-sm btn-baja" style="border: 1px solid #FFE9CE;">
+                                    <p style="width: max-content; margin: 0;">BAJA</p>
+                                    <p style="width: max-content; margin: 0;"><b>42</b></p>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn-sm btn-todos" style="border: 1px solid #01688A;">
+                                    <p style="width: max-content; margin: 0;">TODOS</p>
+                                    <p style="width: max-content; margin: 0;"><b>40</b></p>
+                                </button>
+                            </li>
+                            <div class="buscador">
+                                <input type="search" placeholder="Nombre, Estado, UT, Clase de equipo">
+                                <button class="btn-sm"> <i class="fas fa-search" style="color: #999;"></i> </button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tabla de solicitudes -->
+
+                <div class="tableContainer">
+                    <div
+                        class="table-responsive-lg table-responsive-md table-responsive-lg table-responsive-xxl table-responsive">
+                        <div class="d-flex align-items-center my-3">
+                            <div class="d-flex col-lg-10 align-items-center">
+                                <p class="mb-0 fs-14 col-lg-2 px-0">Tipo de acción</p>
+                                <div class="dropdown col-lg-3 px-0">
+                                    <a class="btn btn-sm btn-light dropdown-toggle dropdown-toggle-home input-estado w-maxcontent px-2"
+                                        href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Área Responsable de Ejecución
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item fs-14" href="#">Modificación</a>
+                                        <a class="dropdown-item fs-14" href="#">Eliminación</a>
+                                        <a class="dropdown-item fs-14" href="#">Agregado</a>
+                                    </div>
+                                </div>
+                                <p class="mb-0 fs-14 col-lg-2 px-0 mr-3">Responsable de Ejecución</p>
+                                <p class="mb-0 fs-14 col-lg-2 px-0">Inicio deseado</p>
+                                <p class="mb-0 fs-14 col-lg-1 px-0">Fin deseado</p>
+                                <div class="dropdown w-10 col-lg-2">
+                                    <a class="btn btn-sm btn-light dropdown-toggle dropdown-toggle-home input-estado w-maxcontent px-2"
+                                        href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Estado
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item fs-14" href="#">Modificación</a>
+                                        <a class="dropdown-item fs-14" href="#">Eliminación</a>
+                                        <a class="dropdown-item fs-14" href="#">Agregado</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                            </div>
+                        </div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <button class="btn btn-sm btn-block text-left" type="button" data-toggle="collapse"
+                                    class="card-header" id="headingOne" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="flex-column">
+                                            <div class="d-flex justify-content-start align-items-center">
+                                                <div class="rechazado mr-2"></div>
+                                                <p style="opacity: 100%; margin: 0; text-align: center;" class="w-5">MUY ALTO</p>
+                                                <div
+                                                    style="background-color: #999; width: 1px; height: 30px; margin: 0 1rem;">
+                                                </div>
+                                                <p class="mb-0">PENDIENTE DE APROBACION</p>
+                                                <div
+                                                    style="background-color: #999; width: 1px; height: 30px; margin: 0 1rem;">
+                                                </div>
+                                                <p class="mb-0"> <b>SAP:</b> 000015683518</p>
+                                                <div
+                                                    style="background-color: #999; width: 1px; height: 30px; margin: 0 1rem;">
+                                                </div>
+                                                <p class="mb-0"> <b>SAC:</b> 333</p>
+                                            </div>
+                                            <div>
+                                                <a href="">Modificación longitud palanca freno PG832</a>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <i class="far fa-save"></i>
+                                            <i class="far fa-file-import"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="d-flex justify-content-between align-items-center my-3">
+                                    <div class="d-flex align-items-center col-lg-10">
+                                        <p class="mb-0 col-lg-2 fs-14 pl-0">Nombre de accion 001</p>
+                                        <div class="dropdown col-lg-3 pl-0">
+                                            <p class="mb-0 fs-14">Ingenieria</p>
+                                        </div>
+                                        <p class="mb-0 col-lg-2 fs-14 px-0 mr-3">Roberto Sifon</p>
+                                        <p class="mb-0 col-lg-2 fs-14 pl-0">25/03/2022</p>
+                                        <p class="mb-0 col-lg-1 fs-14 pl-0 mr-3">15/05/2022</p>
+                                        <p class="mb-0 col-lg-2 fs-14">Pendiente de aprobación</p>
+                                    </div>
+
+                                    <div class="w-10 col-lg-2" style="text-align: end;">
+                                        <a type="button" data-toggle="collapse" class="text-ff9900 fs-14"
+                                            id="comentarioHead1" data-target="#comentario1" aria-expanded="true"
+                                            aria-controls="comentario1">Ver comentarios</a>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div id="comentario1" class="collapse show text-muted text-14"
+                                    aria-labelledby="comentarioHead1" data-parent="#collapseOne">
+                                    <div class="d-flex">
+                                        <div class="col-lg-2">
+                                            08/10/2021 12:30
+                                        </div>
+                                        <div class="col-lg-10">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque
+                                            sunt rerum, voluptates laboriosam reiciendis error architecto sapiente odio
+                                            accusantium quibusdam molestiae, possimus dignissimos totam. Vero
+                                            ratione suscipit eveniet dolorum quasi. Vel, expedita reprehenderit velit ipsa
+                                            amet quas? Veniam, eos?
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <button class="btn btn-sm btn-block text-left" type="button" data-toggle="collapse"
+                                    class="card-header" id="headingOne" data-target="#collapseTwo" aria-expanded="true"
+                                    aria-controls="collapseTwo">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="flex-column">
+                                            <div class="d-flex justify-content-start align-items-center">
+                                                <div class="sinAprobar mr-2"></div>
+                                                <p style="opacity: 100%; margin: 0; text-align: center;" class="w-5">MEDIO</p>
+                                                <div
+                                                    style="background-color: #999; width: 1px; height: 30px; margin: 0 1rem;">
+                                                </div>
+                                                <p class="mb-0">PENDIENTE DE APROBACION</p>
+                                                <div
+                                                    style="background-color: #999; width: 1px; height: 30px; margin: 0 1rem;">
+                                                </div>
+                                                <p class="mb-0"> <b>SAP:</b> 000015683518</p>
+                                                <div
+                                                    style="background-color: #999; width: 1px; height: 30px; margin: 0 1rem;">
+                                                </div>
+                                                <p class="mb-0"> <b>SAC:</b> 333</p>
+                                            </div>
+                                            <div>
+                                                <a href="">Modificación longitud palanca freno PG832</a>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <i class="far fa-save"></i>
+                                            <i class="far fa-file-import"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="d-flex justify-content-between align-items-center my-3">
+                                        <div class="d-flex align-items-center col-lg-10">
+                                            <p class="mb-0 col-lg-2 fs-14 pl-0">Nombre de accion 001</p>
+                                            <div class="dropdown col-lg-3 pl-0">
+                                                <p class="mb-0 fs-14">Ingenieria</p>
+                                            </div>
+                                            <p class="mb-0 col-lg-2 fs-14 px-0 mr-3">Roberto Sifon</p>
+                                            <p class="mb-0 col-lg-2 fs-14 pl-0">25/03/2022</p>
+                                            <p class="mb-0 col-lg-1 fs-14 pl-0 mr-3">15/05/2022</p>
+                                            <p class="mb-0 col-lg-2 fs-14">Pendiente de aprobación</p>
+                                        </div>
+                                    
+                                        <div class="w-10 col-lg-2" style="text-align: end;">
+                                            <a type="button" data-toggle="collapse" class="text-ff9900 fs-14" id="comentarioHead1"
+                                                data-target="#comentario2" aria-expanded="true" aria-controls="comentario2">Ver comentarios</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div id="comentario2" class="collapse show text-muted text-14" aria-labelledby="comentarioHead1"
+                                        data-parent="#collapseTwo">
+                                        <div class="d-flex">
+                                            <div class="col-lg-2">
+                                                08/10/2021 12:30
+                                            </div>
+                                            <div class="col-lg-10">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque
+                                                sunt rerum, voluptates laboriosam reiciendis error architecto sapiente odio
+                                                accusantium quibusdam molestiae, possimus dignissimos totam. Vero
+                                                ratione suscipit eveniet dolorum quasi. Vel, expedita reprehenderit velit ipsa
+                                                amet quas? Veniam, eos?
+                                            </div>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <button class="btn btn-sm btn-block text-left" type="button" data-toggle="collapse"
+                                    class="card-header" id="headingOne" data-target="#collapseThree"
+                                    aria-expanded="true" aria-controls="collapseThree">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="flex-column">
+                                            <div class="d-flex justify-content-start align-items-center">
+                                                <div class="aprobado mr-2"></div>
+                                                <p style="opacity: 100%; margin: 0; text-align: center;" class="w-5">BAJO</p>
+                                                <div
+                                                    style="background-color: #999; width: 1px; height: 30px; margin: 0 1rem;">
+                                                </div>
+                                                <p class="mb-0">PENDIENTE DE APROBACION</p>
+                                                <div
+                                                    style="background-color: #999; width: 1px; height: 30px; margin: 0 1rem;">
+                                                </div>
+                                                <p class="mb-0"> <b>SAP:</b> 000015683518</p>
+                                                <div
+                                                    style="background-color: #999; width: 1px; height: 30px; margin: 0 1rem;">
+                                                </div>
+                                                <p class="mb-0"> <b>SAC:</b> 333</p>
+                                            </div>
+                                            <div>
+                                                <a href="">Modificación longitud palanca freno PG832</a>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <i class="far fa-save"></i>
+                                            <i class="far fa-file-import"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="d-flex justify-content-between align-items-center my-3">
+                                        <div class="d-flex align-items-center col-lg-10">
+                                            <p class="mb-0 col-lg-2 fs-14 pl-0">Nombre de accion 001</p>
+                                            <div class="dropdown col-lg-3 pl-0">
+                                                <p class="mb-0 fs-14">Ingenieria</p>
+                                            </div>
+                                            <p class="mb-0 col-lg-2 fs-14 px-0 mr-3">Roberto Sifon</p>
+                                            <p class="mb-0 col-lg-2 fs-14 pl-0">25/03/2022</p>
+                                            <p class="mb-0 col-lg-1 fs-14 pl-0 mr-3">15/05/2022</p>
+                                            <p class="mb-0 col-lg-2 fs-14">Pendiente de aprobación</p>
+                                        </div>
+                                    
+                                        <div class="w-10 col-lg-2" style="text-align: end;">
+                                            <a type="button" data-toggle="collapse" class="text-ff9900 fs-14" id="comentarioHead1"
+                                                data-target="#comentario3" aria-expanded="true" aria-controls="comentario3">Ver comentarios</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div id="comentario3" class="collapse show text-muted text-14" aria-labelledby="comentarioHead1"
+                                        data-parent="#collapseThree">
+                                        <div class="d-flex">
+                                            <div class="col-lg-2">
+                                                08/10/2021 12:30
+                                            </div>
+                                            <div class="col-lg-10">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque
+                                                sunt rerum, voluptates laboriosam reiciendis error architecto sapiente odio
+                                                accusantium quibusdam molestiae, possimus dignissimos totam. Vero
+                                                ratione suscipit eveniet dolorum quasi. Vel, expedita reprehenderit velit ipsa
+                                                amet quas? Veniam, eos?
+                                            </div>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Paginador del listado de solicitudes -->
+                <div class="paginador mt-4 d-flex justify-content-end">
+                    <p style="font-size: 13px; margin-top: 8px;">Nro. por página</p>
+                    <select name="next" id="">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

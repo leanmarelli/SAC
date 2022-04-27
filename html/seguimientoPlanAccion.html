@@ -27,7 +27,6 @@
 
 <body>
     <div class="contenedor">
-
         <div>
             <header>
                 <nav class="headerSac">
@@ -132,12 +131,12 @@
                         </div>
 
                         <!-- SOLICITUD (APROBACION) -->
-                        <!-- 5- Planes de accion a aprobar-->
+                        <!-- 5- Planes de acción a aprobar-->
                         <div class="planesDeAccionAAprobar mt-4 mb-5">
                             <h5>5-Planes de acción a aprobar</h5>
-                            <p>Detallar las acciones a realizar para un cambio seguro</p>
+                            <p>Detallar las acciónes a realizar para un cambio seguro</p>
                             <!-- Mensaje validador -->
-                            <div class="custom-border-left-warning custom-border-left-warning mT-4 w-50">
+                            <div class="custom-border-left-warning custom-border-left-warning mT-4 w50">
                                 <div class="row">
                                     <div class="col-2 col-lg-1 my-2">
                                         <div class="ml-4">
@@ -165,49 +164,63 @@
                                     <tbody>
                                         <!-- Datos invalidos -->
                                         <tr>
-                                            <td>
-                                                <select name="" id="" class="w-100 text-muted form-control is-invalid">
-                                                    <option value="" selected>Nombre del plan de acción</option>
-                                                    <option value="">Nombre 1</option>
-                                                    <option value="">Nombre 2</option>
-                                                    <option value="">Nombre 3</option>
-                                                </select>
+                                            <td class="w-smMC">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-light dropdown-toggle dropdown-toggle-nueva-solicitud form-control is-invalid w-sm100 input-estado" style="width: 100%!important;" href="#"
+                                                        role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        - Nombre del plan de acción -
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#">Nombre 1</a>
+                                                        <a class="dropdown-item" href="#">Nombre 2</a>
+                                                        <a class="dropdown-item" href="#">Nombre 3</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="w-smMC">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-light dropdown-toggle dropdown-toggle-nueva-solicitud form-control is-invalid w-sm100 input-estado" style="width: 100%!important;" href="#"
+                                                        role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        - Seleccione area -
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#">Ingeniería</a>
+                                                        <a class="dropdown-item" href="#">Procesos</a>
+                                                        <a class="dropdown-item" href="#">Ing Mantenimiento-Técnologico</a>
+                                                        <a class="dropdown-item" href="#">HISE</a>
+                                                        <a class="dropdown-item" href="#">Calidad</a>
+                                                        <a class="dropdown-item" href="#">Medio Ambiente</a>
+                                                        <a class="dropdown-item" href="#">Ing. Seguridad</a>
+                                                        <a class="dropdown-item" href="#">Otro</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="w-smMC">
+                                                <input type="text" placeholder="Eduardo García" style="width: 100%!important;" class="w-sm100 form-control is-invalid py-2 px-3">
+                                            </td>
+                                            <td class="w-smMC">
+                                                <input type="date" style="width: 100%!important;" class="w-sm100 text-muted form-control is-invalid">
+                                            </td>
+                                            <td class="w-smMC">
+                                                <input type="date" style="width: 100%!important;" class="w-sm100 text-muted form-control is-invalid">
+                                            </td>
+                                            <td class="w-smMC">
+                                                <div class="dropdown">
+                                                    <button style="width: 100%!important;" class="btn btn-light dropdown-toggle dropdown-toggle-nueva-solicitud w-sm100 input-estado form-control is-invalid" href="#"
+                                                        role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        - Estado -
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#">Ejemplos</a>
+                                                        <a class="dropdown-item" href="#">Procesos</a>
+                                                        <a class="dropdown-item" href="#">Ing Mantenimiento</a>
+                                                        <a class="dropdown-item" href="#">HISE</a>
+                                                        <a class="dropdown-item" href="#">Calidad</a>
+                                                    </div>
+                                                </div>
                                             </td>
                                             <td>
-                                                <select name="tipo-de-cambio" id=""
-                                                    class="w-100 text-muted form-control is-invalid">
-                                                    <option value="">- Seleccione área -</option>
-                                                    <option value="">Ingeniería</option>
-                                                    <option value="">Procesos</option>
-                                                    <option value="">Ing Mantenimiento-Técnologico</option>
-                                                    <option value="">HISE</option>
-                                                    <option value="">Calidad</option>
-                                                    <option value="">Medio Ambiente</option>
-                                                    <option value="">Ing. Seguridad</option>
-                                                    <option value="">Otro</option>
-                                                </select>
-                                            </td>
-                                            <td><input type="text" placeholder="Eduardo García"
-                                                    class="w-100 form-control is-invalid py-2 px-3"></td>
-                                            <td>
-                                                <input type="date" class="w-100 text-muted form-control is-invalid">
-                                            </td>
-                                            <td>
-                                                <input type="date" class="w-100 text-muted form-control is-invalid">
-                                            </td>
-                                            <td>
-                                                <select name="estados" id="" class="w-100 text-muted form-control is-invalid">
-                                                    <option value="">Estados</option>
-                                                    <option value="">Estado 1</option>
-                                                    <option value="">Estado 2</option>
-                                                    <option value="">Estado 3</option>
-                                                    <option value="">Estado 4</option>
-                                                    <option value="">Estado 5</option>
-                                                </select>
-                                            </td>
-                                            <td>
-                                                <button class="add pl-3 opacity-50" disabled><i
-                                                        class="fas fa-plus-square"></i></button>
+                                                <button class="add pl-3 opacity-50" disabled><i class="fas fa-plus-square"></i></button>
                                             </td>
                                         </tr>
                                         <!-- Primer comentario a agregar -->
@@ -217,7 +230,7 @@
                                                     <div class="col-9">
                                                         <div
                                                             class="d-flex justify-content-between align-items-center  px-3">
-                                                            <a class="text-left w-50 mb-2" type="button"
+                                                            <a class="text-left w50 mb-2" type="button"
                                                                 data-toggle="collapse" data-target="#collapseTwo"
                                                                 aria-expanded="false" aria-controls="#collapseTwo">
                                                                 <div class="d-flex align-items-center">
@@ -252,47 +265,62 @@
                                         </tr>
                                         <!-- Datos validos -->
                                         <tr>
-                                            <td>
-                                                <select name="" id="" class="w-100 text-muted">
-                                                    <option value="" selected>Nombre del plan de acción</option>
-                                                    <option value="">Nombre 1</option>
-                                                    <option value="">Nombre 2</option>
-                                                    <option value="">Nombre 3</option>
-                                                </select>
+                                            <td class="w-smMC" >
+                                                <div class="dropdown">
+                                                    <button class="btn btn-light dropdown-toggle dropdown-toggle-nueva-solicitud w-sm100 input-estado" href="#"
+                                                        role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        - Nombre del plan de acción -
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#">Nombre 1</a>
+                                                        <a class="dropdown-item" href="#">Nombre 2</a>
+                                                        <a class="dropdown-item" href="#">Nombre 3</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="w-smMC">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-light dropdown-toggle dropdown-toggle-nueva-solicitud w-sm100 input-estado" href="#"
+                                                        role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        - Seleccione area -
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#">Ingeniería</a>
+                                                        <a class="dropdown-item" href="#">Procesos</a>
+                                                        <a class="dropdown-item" href="#">Ing Mantenimiento-Técnologico</a>
+                                                        <a class="dropdown-item" href="#">HISE</a>
+                                                        <a class="dropdown-item" href="#">Calidad</a>
+                                                        <a class="dropdown-item" href="#">Medio Ambiente</a>
+                                                        <a class="dropdown-item" href="#">Ing. Seguridad</a>
+                                                        <a class="dropdown-item" href="#">Otro</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="w-smMC"><input type="text" placeholder="Eduardo García" class="w-sm100"></td>
+                                            <td class="w-smMC">
+                                                <input type="date" class="w-sm100 text-muted">
+                                            </td>
+                                            <td class="w-smMC">
+                                                <input type="date" class="w-sm100 text-muted">
+                                            </td>
+                                            <td class="w-smMC">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-light dropdown-toggle dropdown-toggle-nueva-solicitud w-sm100 input-estado" href="#"
+                                                        role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        - Estado -
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#">E1</a>
+                                                        <a class="dropdown-item" href="#">E2</a>
+                                                        <a class="dropdown-item" href="#">E3</a>
+                                                    </div>
+                                                </div>
                                             </td>
                                             <td>
-                                                <select name="tipo-de-cambio" class="w-100 text-muted" id="">
-                                                    <option value="">- Seleccione área -</option>
-                                                    <option value="">Ingeniería</option>
-                                                    <option value="">Procesos</option>
-                                                    <option value="">Ing Mantenimiento-Técnologico</option>
-                                                    <option value="">HISE</option>
-                                                    <option value="">Calidad</option>
-                                                    <option value="">Medio Ambiente</option>
-                                                    <option value="">Ing. Seguridad</option>
-                                                    <option value="">Otro</option>
-                                                </select>
-                                            </td>
-                                            <td><input type="text" placeholder="Eduardo García" class="w-100"></td>
-                                            <td>
-                                                <input type="date" class="w-100 text-muted">
-                                            </td>
-                                            <td>
-                                                <input type="date" class="w-100 text-muted">
-                                            </td>
-                                            <td>
-                                                <select name="estados" id="" class="w-100 text-muted">
-                                                    <option value="">Estados</option>
-                                                    <option value="">Estado 1</option>
-                                                    <option value="">Estado 2</option>
-                                                    <option value="">Estado 3</option>
-                                                    <option value="">Estado 4</option>
-                                                    <option value="">Estado 5</option>
-                                                </select>
-                                            </td>
-                                            <td class="w-maxcontent">
-                                                <button id="subtract"><i class="fas fa-minus-square"></i></button>
-                                                <button class="add px-0"><i class="fas fa-plus-square"></i></button>
+                                                <div class="w-maxcontent">
+                                                    <button id="subtract"><i class="fas fa-minus-square"></i></button>
+                                                    <button class="add"><i class="fas fa-plus-square"></i></button>
+                                                </div>
                                                 <!-- <button class="edit"><i class="fas fa-pen-square"></i></button> -->
                                             </td>
                                         </tr>
@@ -364,48 +392,62 @@
                                         </tr>
                                         <!-- Datos validos -->
                                         <tr>
-                                            <td>
-                                                <select name="" id="" class="w-100 text-muted">
-                                                    <option value="" selected>Nombre del plan de acción</option>
-                                                    <option value="">Nombre 1</option>
-                                                    <option value="">Nombre 2</option>
-                                                    <option value="">Nombre 3</option>
-                                                </select>
+                                            <td class="w-smMC">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-light dropdown-toggle dropdown-toggle-nueva-solicitud w-sm100 input-estado" href="#"
+                                                        role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        - Nombre del plan de acción -
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#">Nombre 1</a>
+                                                        <a class="dropdown-item" href="#">Nombre 2</a>
+                                                        <a class="dropdown-item" href="#">Nombre 3</a>
+                                                    </div>
+                                                </div>
                                             </td>
-                                            <td>
-                                                <select name="tipo-de-cambio" class="w-100 text-muted" id="">
-                                                    <option value="">- Seleccione área -</option>
-                                                    <option value="">Ingeniería</option>
-                                                    <option value="">Procesos</option>
-                                                    <option value="">Ing Mantenimiento-Técnologico</option>
-                                                    <option value="">HISE</option>
-                                                    <option value="">Calidad</option>
-                                                    <option value="">Medio Ambiente</option>
-                                                    <option value="">Ing. Seguridad</option>
-                                                    <option value="">Otro</option>
-                                                </select>
+                                            <td class="w-smMC">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-light dropdown-toggle dropdown-toggle-nueva-solicitud w-sm100 input-estado" href="#"
+                                                        role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        - Seleccione area -
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#">Ingeniería</a>
+                                                        <a class="dropdown-item" href="#">Procesos</a>
+                                                        <a class="dropdown-item" href="#">Ing Mantenimiento-Técnologico</a>
+                                                        <a class="dropdown-item" href="#">HISE</a>
+                                                        <a class="dropdown-item" href="#">Calidad</a>
+                                                        <a class="dropdown-item" href="#">Medio Ambiente</a>
+                                                        <a class="dropdown-item" href="#">Ing. Seguridad</a>
+                                                        <a class="dropdown-item" href="#">Otro</a>
+                                                    </div>
+                                                </div>
                                             </td>
-                                            <td><input type="text" placeholder="Eduardo García" class="w-100"></td>
-                                            <td>
-                                                <input type="date" class="w-100 text-muted">
+                                            <td class="w-smMC"><input type="text" placeholder="Eduardo García" class="w-sm100"></td>
+                                            <td class="w-smMC">
+                                                <input type="date" class="w-sm100 text-muted">
                                             </td>
-                                            <td>
-                                                <input type="date" class="w-100 text-muted">
+                                            <td class="w-smMC">
+                                                <input type="date" class="w-sm100 text-muted">
                                             </td>
-                                            <td>
-                                                <select name="estados" id="" class="w-100 text-muted">
-                                                    <option value="">Estados</option>
-                                                    <option value="">Estado 1</option>
-                                                    <option value="">Estado 2</option>
-                                                    <option value="">Estado 3</option>
-                                                    <option value="">Estado 4</option>
-                                                    <option value="">Estado 5</option>
-                                                </select>
+                                            <td class="w-smMC">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-light dropdown-toggle dropdown-toggle-nueva-solicitud w-sm100 input-estado" href="#"
+                                                        role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        - Estado -
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#">E1</a>
+                                                        <a class="dropdown-item" href="#">E2</a>
+                                                        <a class="dropdown-item" href="#">E3</a>
+                                                    </div>
+                                                </div>
                                             </td>
-                                            <td class="w-maxcontent">
-                                                <button id="subtract"><i class="fas fa-minus-square"></i></button>
-                                                <button class="add px-0"><i class="fas fa-plus-square"></i></button>
-                                                <!-- <button class="edit"><i class="fas fa-pen-square"></i></button> -->
+                                            <td >
+                                                <div class="w-maxcontent">
+                                                    <button id="subtract"><i class="fas fa-minus-square"></i></button>
+                                                    <button class="add"><i class="fas fa-plus-square"></i></button>
+                                                </div>
                                             </td>
                                         </tr>
                                         <!-- Ver un comentario ya creado anteriormente -->
@@ -465,8 +507,8 @@
                                         </div>
                                         <div class="modal-body modal-body-comment pt-2">
                                             <div class="d-flex justify-content-center">
-                                                <p class="col-3 mb-0">08/10/2021 - 12:30</p>
-                                                <p class="col-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                <p class="col-lg-3 col-md-3 mb-0">08/10/2021 - 12:30</p>
+                                                <p class="col-lg-9 col-md-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
                                                     elit. Debitis iste itaque doloremque sit quaerat
                                                     id suscipit maiores qui facere atque! Nisi laborum aliquid culpa hic
                                                     iste doloremque laudantium
@@ -477,8 +519,8 @@
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-center">
-                                                <p class="col-3 mb-0">08/10/2021 - 12:30</p>
-                                                <p class="col-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                <p class="col-lg-3 col-md-3 mb-0">08/10/2021 - 12:30</p>
+                                                <p class="col-lg-9 col-md-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
                                                     elit. Debitis iste itaque doloremque sit quaerat
                                                     id suscipit maiores qui facere atque! Nisi laborum aliquid culpa hic
                                                     iste doloremque laudantium
@@ -489,8 +531,8 @@
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-center">
-                                                <p class="col-3 mb-0">08/10/2021 - 12:30</p>
-                                                <p class="col-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                <p class="col-lg-3 col-md-3 mb-0">08/10/2021 - 12:30</p>
+                                                <p class="col-lg-9 col-md-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
                                                     elit. Debitis iste itaque doloremque sit quaerat
                                                     id suscipit maiores qui facere atque! Nisi laborum aliquid culpa hic
                                                     iste doloremque laudantium
@@ -501,8 +543,8 @@
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-center">
-                                                <p class="col-3 mb-0">08/10/2021 - 12:30</p>
-                                                <p class="col-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                <p class="col-lg-3 col-md-3 mb-0">08/10/2021 - 12:30</p>
+                                                <p class="col-lg-9 col-md-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
                                                     elit. Debitis iste itaque doloremque sit quaerat
                                                     id suscipit maiores qui facere atque! Nisi laborum aliquid culpa hic
                                                     iste doloremque laudantium
@@ -513,8 +555,8 @@
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-center">
-                                                <p class="col-3 mb-0">08/10/2021 - 12:30</p>
-                                                <p class="col-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                <p class="col-lg-3 col-md-3 mb-0">08/10/2021 - 12:30</p>
+                                                <p class="col-lg-9 col-md-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
                                                     elit. Debitis iste itaque doloremque sit quaerat
                                                     id suscipit maiores qui facere atque! Nisi laborum aliquid culpa hic
                                                     iste doloremque laudantium
@@ -525,8 +567,8 @@
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-center">
-                                                <p class="col-3 mb-0">08/10/2021 - 12:30</p>
-                                                <p class="col-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                <p class="col-lg-3 col-md-3 mb-0">08/10/2021 - 12:30</p>
+                                                <p class="col-lg-9 col-md-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
                                                     elit. Debitis iste itaque doloremque sit quaerat
                                                     id suscipit maiores qui facere atque! Nisi laborum aliquid culpa hic
                                                     iste doloremque laudantium
@@ -537,8 +579,8 @@
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-center">
-                                                <p class="col-3 mb-0">08/10/2021 - 12:30</p>
-                                                <p class="col-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                <p class="col-lg-3 col-md-3 mb-0">08/10/2021 - 12:30</p>
+                                                <p class="col-lg-9 col-md-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
                                                     elit. Debitis iste itaque doloremque sit quaerat
                                                     id suscipit maiores qui facere atque! Nisi laborum aliquid culpa hic
                                                     iste doloremque laudantium
@@ -549,8 +591,8 @@
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-center">
-                                                <p class="col-3 mb-0">08/10/2021 - 12:30</p>
-                                                <p class="col-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                <p class="col-lg-3 col-md-3 mb-0">08/10/2021 - 12:30</p>
+                                                <p class="col-lg-9 col-md-9 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing
                                                     elit. Debitis iste itaque doloremque sit quaerat
                                                     id suscipit maiores qui facere atque! Nisi laborum aliquid culpa hic
                                                     iste doloremque laudantium
@@ -569,24 +611,36 @@
                             <br>
                             <p><b>Presupuesto budgetario e imputación</b> (opcionales)</p>
                             <label for="costo-estimado">Costo estimado</label> <br>
-                            <input type="text" name="costo-estimado" placeholder="Escriba el costo estimado"
-                                style="width: 20rem;"> <br>
+                            <input type="text" name="costo-estimado" placeholder="Escriba el costo estimado"> <br>
                             <label for="centro-de-costo" class="mt-2">Centro de costo</label> <br>
                             <input type="text" name="centro-de-costo" placeholder="Escriba el centro de costo"
-                                class=" mb-2" style="width: 20rem;"> <br>
+                                class=" mb-2"> <br>
                             <label for="elemento-pep">Elemento PEP</label> <br>
-                            <input type="text" name="elemento-pep" placeholder="Escriba el elemento PEP"
-                                style="width: 20rem;"> <br>
+                            <input type="text" name="elemento-pep" placeholder="Escriba el elemento PEP"> <br>
                             <p class="mt-3">Adjuntar presupuesto (Opcional)</p>
                             <button class="btn btnAdjuntarArchivos mb-3">
                                 <p><i class="fas fa-upload mr-2"></i>Adjuntar archivos</p>
                             </button>
                             <!-- ARCHIVO ADJUNTO -->
-                            <div class="archivo-adjunto">
+                            <div class="archivo-adjunto ultimo-contenedor">
                                 <p class="mb-0"> Archivo 1.pdf... </p>
                                 <i class="fas fa-times borrar-adjunto"></i>
                             </div>
                         </div>
+                        <hr>
+                        <div class="btn-filtros mb-5" style="display: flex; justify-content: space-between; padding: .2rem;">
+                            <a href="solicitud.html">
+                                <button class="btn mr-2" style="width: max-content;">
+                                    <i class="fas fa-arrow-left"></i> SOLICITUD
+                                </button>
+                            </a>
+                            <a href="aprobacionSolicitud.html">
+                                <button class="btn">
+                                    APROBACIÓN <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </a>
+                        </div>
+                        <br>
 
                     </div>
                 </div>
